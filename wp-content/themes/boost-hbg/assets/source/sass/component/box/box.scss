@@ -10,14 +10,6 @@
     }
 }
 
-a.box {
-    &:hover {
-        .link-item::before {
-            color: $green;
-        }
-    }
-}
-
 .box-filled {
     h1,
     h2,

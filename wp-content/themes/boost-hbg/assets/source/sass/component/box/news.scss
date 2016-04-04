@@ -1,6 +1,7 @@
 .box-news {
-    background-color: transparent;
-    color: #000;
+    position: relative;
+    background-color: #fff;
+    color: #999;
     text-align: center;
     padding: 0;
     border: none;
@@ -8,8 +9,8 @@
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
         padding: 0;
-        font-weight: bold;
-        font-size: 1.5em;
+        font-size: 1.3em;
+        color: #fff;
     }
 
     .box-image {
@@ -68,7 +69,31 @@
     }
 
     .box-content {
+        background-color: rgba(#000,.3);
         padding-top: 0;
+        @include cover();
+
+        h1, h2, h3, h4, h5 {
+            @include center();
+            width: 90%;
+        }
+
+        p {
+
+            padding: 0 10px 15px 10px;
+            display: block;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+
+            time {
+
+            }
+
+        }
     }
 
     &:hover {

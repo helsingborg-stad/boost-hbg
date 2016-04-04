@@ -18,6 +18,31 @@
     }
 }
 
-#main-content .sidebar-content-area.creamy-border-bottom {
-    border-bottom: 1px solid #F5F1F1;
+/* Default */
+&{
+
+    .logotype:before {
+        background-color: rgba(118, 210, 182,.9) !important;
+    }
+
+    .navbar,
+    footer.main-footer {
+        background-color: rgb(118, 210, 182);
+    }
+
+    header#site-header:after {
+        background-color: rgb(118, 210, 182);
+    }
+}
+
+/* Yellow theme */
+&.boost-yellow {
+
+}
+
+/* Pink theme */
+&.boost-pink {
+    .navbar {
+        background-color: rgb(218,72,126);
+    }
 }

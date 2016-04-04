@@ -1,5 +1,4 @@
 .search-top {
-    background-color: $black;
     padding: 20px 0;
 
     form {
@@ -7,10 +6,6 @@
             display: none;
         }
     }
-}
-
-.navbar-mainmenu a svg.hbg-icon {
-    width: 28px;
 }
 
 #site-header {
@@ -23,6 +18,8 @@
     left: 0;
     transition: all 200ms;
     font-family: $dunkers-font-family;
+    background-color: rgba(0,0,0,.4);
+    overflow: hidden;
 
     nav.navbar {
         background-color: transparent;
@@ -34,43 +31,47 @@
         fill: #fff;
     }
 
-    nav.navbar [data-tooltip] {
-        &:after {
-            border-radius: 2px;
-            padding: 10px;
-            background-color: #fff;
-            color: $black;
-            text-transform: uppercase;
-            opacity: .9;
-            transition: all 100ms;
-        }
-
-        &:before {
-            border-bottom-color: #fff;
-            opacity: .9;
-            transition: all 100ms;
-            bottom: -8px;
-        }
-    }
-
     .logotype {
         transition: opacity 300ms;
         z-index: 800;
+        position: relative;
 
         svg, img {
-            height: 25px;
+            height: 50px;
+            z-index: 100;
+            position: relative;
+            transform: rotate(0) scale(.9);
+            transition: all 100ms;
+
+            &:hover {
+                transform: rotate(-3deg) scale(1);
+            }
         }
 
-        svg path,
-        svg use {
-            fill: #fff !important;
-            transition: fill 300ms;
+        svg path {
+            stroke: #fff !important;
+            transition: fill 300ms, stroke 300ms;
+
+            &.solid-form {
+                fill: #fff !important;
+            }
         }
 
-        &:after, &:before {
+        &:before {
+            z-index: 99;
+            right: 200%;
+            transition: 500ms all ease-in-out;
+            content: "";
+            top: 0;
+            background: #000;
+            display: block;
+            position: absolute;
+            transform: rotate(37deg) translate(-50%, -50%);
+            height: 1060px;
+            width: 1000px;
             opacity: 0;
-            transition: 200ms opacity;
         }
+
     }
 
 }
@@ -79,27 +80,24 @@
 &:not(.home) #site-header,
 &.menu-open #site-header,
 &.no-js #site-header {
-    background-color: rgba(#fff,.97);
-    border-bottom: 1px solid $gray-light;
-    box-shadow: 0 0 2px rgba($black, .1);
 
-    .logotype {
-        svg path,
-        svg use {
-            fill: $black !important;
-        }
+    background-color: hsla(0,0%,98%,0.9);
+
+    &:after {
+        width: 100%;
     }
 
-    nav.navbar [data-tooltip] {
-        &:after {
-            background-color: rgba(#000,.7);
-            color: #fff;
+    .logotype {
+        svg path {
+            stroke: #fff !important;
+            &.solid-form {
+                fill: #fff !important;
+            }
         }
 
         &:before {
-            border-bottom-color: rgba(#000,.7);
+            right: -170px;
             opacity: 1;
-            bottom: -8px;
         }
     }
 
@@ -108,10 +106,6 @@
         fill: $black;
     }
 
-    nav.navbar {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
 }
 
 &.home .navbar {
