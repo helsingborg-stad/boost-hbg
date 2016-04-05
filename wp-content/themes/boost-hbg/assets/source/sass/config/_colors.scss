@@ -1,16 +1,17 @@
-$black: #1E1E1E;
+$black: #000;
 
 $gray: #e0e1e2;
 $gray-light: lighten($gray,10%);
 $gray-dark: darken($gray,8%);
 
-$green: #34B233;
+$green: rgb(118,210,182);
+$green-light: lighten($green,5%);
+$green-dark: darken($green,40%);
 
-$blue: #64b1cc;
-$blue-light: lighten($blue, 10%);
+$yellow: rgb(252,217,0);
+$yellow-light: lighten($yellow,5%);
+$yellow-dark: darken($yellow,20%);
 
-$yellow: #fff20c;
-$yellow-light: lighten($yellow,10%);
-
-$pink: #cc2f96;
-$pink-light: lighten($pink,10%);
+$pink: rgb(218,72,126);
+$pink-light: lighten($pink,5%);
+$pink-dark: darken($pink,20%);
