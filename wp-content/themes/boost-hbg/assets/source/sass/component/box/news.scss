@@ -5,6 +5,8 @@
     text-align: center;
     padding: 0;
     border: none;
+    margin-bottom: 30px;
+    padding-top: (300 / 400) * 100%;
 
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
@@ -19,6 +21,9 @@
         height: auto;
         filter: grayscale(0);
         transition: filter 800ms cubic-bezier(0.410, 0.405, 0.065, 0.990);
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .box-content {
