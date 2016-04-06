@@ -12,7 +12,7 @@
 
     <div class="scroll-down-please">
         <div class="scroll-down-please-icon"></div>
-        Scrolla ner
+        <?php _e("Scrolla ner",'boost-hbg'); ?>
     </div>
 </div>
 @endif

@@ -1,25 +1,35 @@
 .nav-aside {
-    background-color: $black;
+    background-color: #fff;
     border: none;
-    border-radius: 2px;
-    overflow: hidden;
 
     li + li {
-        border-color: lighten($black, 10%);
+        border-top: ;: 1px solid #eee;
     }
 
     > li > a {
-        padding: 13px 15px 15px;
+        padding: 5px 10px;
         font-family: $dunkers-font-family;
         font-size: 1em;
-        color: #fff;
-        text-transform: uppercase;
-        line-height: 1;
+        color: $green-dark;
         font-weight: bold;
         letter-spacing: .5px;
+        transition: background-color 200ms cubic-bezier(0.410, 0.405, 0.065, 0.990);
+        position: relative;
+        border: none;
 
-        &:hover {
-            background-color: lighten($black, 3%);
+        &:hover:before {
+            opacity: 1;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            background-color: $green;
+            opacity: 0;
         }
     }
 
