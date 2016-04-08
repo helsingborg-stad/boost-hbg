@@ -1,45 +1,24 @@
-.box-panel {
-    border: 1px solid #ddd;
-    padding: 10px;
 
-    .box-title {
-        background: #fff;
-        color: $base-font-color;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-        font-weight: bold;
+    .box-panel {
+        .box-title {
+            border-bottom-color: $green;
+            color: #000;
+
+            &:empty {
+                padding: 0 !important;
+            }
+        }
+
+        ul {
+            li {
+
+                a, a .link-item:before {
+                    color: $green-dark;
+                }
+
+                time {
+                    color: $green-medium;
+                }
+            }
+        }
     }
-
-    .box-content {
-        background-color: #fff;
-        border: none;
-        padding-top: 0;
-    }
-
-    ul,
-    li,
-    table,
-    thead,
-    tfoot,
-    tr,
-    td {
-        border: none;
-    }
-
-    ul li a:hover .title::before {
-        color: $green;
-    }
-}
-
-.box-panel-secondary {
-    .box-title {
-        background-color: $black !important;
-        color: #fff;
-        border-bottom: 0;
-        padding: 10px 15px;
-    }
-}
-
-.box-panel ul:not(.social-feed-gallery) li + li {
-    border-top: 0;
-}

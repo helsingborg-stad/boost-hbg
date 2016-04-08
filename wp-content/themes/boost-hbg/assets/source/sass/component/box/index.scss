@@ -1,4 +1,8 @@
 .box-index {
+    margin-bottom: 30px;
+    background: $green-subtile;
+    border: none;
+
     .box-content {
         padding: 25px;
     }
@@ -6,6 +10,12 @@
     h1, h2, h3, h4, h5, h6 {
         font-size: 1.2em;
         margin-bottom: 5px;
+        line-height: 130%;
+        left: 0;
+
+        &:before {
+            display: none;
+        }
     }
 
     p {

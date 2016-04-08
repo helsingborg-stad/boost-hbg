@@ -92,12 +92,18 @@
 
             &.translate-icon-btn,
             &.search-icon-btn {
-                font-size: 1.6em;
-                padding: 6px 0 6px 15px;
+                font-size: 0;
+                padding: 6px 0 6px 10px;
 
-                &:after,
-                &:before {
-                    font-size: .5em;
+                &:hover {
+                    span:after,
+                    span:before {
+                        display: none;
+                    }
+                }
+
+                i {
+                    font-size: 25px;
                 }
             }
 

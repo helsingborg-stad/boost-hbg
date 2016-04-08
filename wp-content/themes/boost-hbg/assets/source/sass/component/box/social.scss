@@ -5,11 +5,14 @@
 
         .box-title {
             padding: 0;
+            background-color: transparent;
         }
 
         ul.social-feed-instagram, ul.social-feed-pinterest {
             margin: 0 -15px;
             overflow: hidden;
+            border: none;
+            background-color: none;
 
             li {
                 position: relative;

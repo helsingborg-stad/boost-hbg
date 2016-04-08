@@ -1,4 +1,7 @@
 .box {
+    padding: 0;
+    margin-bottom: 30px;
+
     h1,
     h2,
     h3,
@@ -10,7 +13,11 @@
     }
 }
 
-.box-filled {
+.box.box-filled,
+.box.box-card {
+
+    background-color: $green-medium;
+
     h1,
     h2,
     h3,
@@ -22,5 +29,13 @@
 
     .link-item-light {
         color: #fff;
+    }
+
+    p, li, a {
+        color: #fff;
+    }
+
+    .box-content {
+        padding: 7px 15px 15px 15px;
     }
 }

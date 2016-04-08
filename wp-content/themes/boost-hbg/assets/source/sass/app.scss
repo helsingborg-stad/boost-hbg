@@ -31,6 +31,7 @@
     @import 'component/box/social';
     @import 'component/table/datatable';
     @import 'component/bubble';
+    @import 'component/gallery/image-gallery';
 
     @import 'component/navigation/mobile';
     @import 'component/navigation/pagination';
@@ -42,4 +43,6 @@
     @import 'utility/link-item';
     @import 'utility/headings';
     @import 'utility/forms';
+
+    @import 'modularity/inheritpost';
 }
