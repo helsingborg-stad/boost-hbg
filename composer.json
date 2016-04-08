@@ -22,6 +22,14 @@
             "url": "https://github.com/helsingborg-stad/lix-calculator.git"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/helsingborg-stad/xcap-import.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/helsingborg-stad/custom-short-links.git"
+        },
+        {
             "type":"composer",
             "url":"https://wpackagist.org"
         }
@@ -37,7 +45,9 @@
         "wpackagist-plugin/all-in-one-seo-pack": "^2.2.7.5",
         "wpackagist-plugin/varnish-http-purge": "^3.7.2",
         "wpackagist-plugin/stream": "^3.0.4",
-        "wpackagist-plugin/wp-nested-pages": "^1.5.4"
+        "wpackagist-plugin/wp-nested-pages": "^1.5.4",
+        "helsingborg-stad/xcap-import": ">=1.0.0",
+        "helsingborg-stad/custom-short-links": ">=1.0.0"
     },
 
     "extra": {
