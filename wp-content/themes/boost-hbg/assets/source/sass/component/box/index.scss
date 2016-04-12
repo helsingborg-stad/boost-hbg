@@ -1,6 +1,13 @@
 .box-index {
     margin-bottom: 30px;
-    background: $green-subtile;
+    // Color theme styles
+    @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+                background: map-get($color, subtile);
+            }
+        }
+    }
     border: none;
 
     .box-content {

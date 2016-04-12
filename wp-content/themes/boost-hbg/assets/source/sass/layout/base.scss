@@ -30,7 +30,16 @@
 
 &.home {
     #main-content section.creamy-border-bottom.creamy {
-        border-bottom: 2px solid rgba($green,.2);
+
+        // Color theme styles
+        @if ($includeThemes == true) {
+            @each $theme, $color in $themes {
+                .custom-color-#{$theme} & {
+                    border-bottom: 2px solid rgba(map-get($color, default),.2);
+                }
+            }
+        }
+
         padding-bottom: 20px;
     }
 }
@@ -45,7 +54,15 @@
     background-color: rgba(255,255,255,.95);
     transition: all 400ms cubic-bezier(.41,.405,.065,.99);
     z-index: 9999;
-    border-top: 2px solid lighten($green,10%);
+
+    // Color theme styles
+    @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+                border-top: 2px solid lighten(map-get($color, default),10%);
+            }
+        }
+    }
 
     &:target {
         bottom: 0;

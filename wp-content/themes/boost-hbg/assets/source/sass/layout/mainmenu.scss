@@ -112,7 +112,16 @@
                 text-decoration: none;
 
                 &:not(.search-icon-btn):not(.translate-icon-btn) {
-                    background-color: rgba($green,.5);
+
+                    // Color theme styles
+                    @if ($includeThemes == true) {
+                        @each $theme, $color in $themes {
+                            .custom-color-#{$theme} & {
+                                background-color: rgba(map-get($color, default),.5);
+                            }
+                        }
+                    }
+
                 }
 
                 &:not(.search-icon-btn):not(.translate-icon-btn)::before {
@@ -123,7 +132,16 @@
         }
 
         &.current-menu-item a {
-            background-color: darken($green,30%);
+
+            // Color theme styles
+            @if ($includeThemes == true) {
+                @each $theme, $color in $themes {
+                    .custom-color-#{$theme} & {
+                        background-color: darken(map-get($color, default),30%);
+                    }
+                }
+            }
+
             text-decoration: none;
 
             &:hover,

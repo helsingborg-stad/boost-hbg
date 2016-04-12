@@ -93,7 +93,15 @@
 
         &:hover {
             background-color: transparent;
-            color: $green !important;
+
+            // Color theme styles
+            @if ($includeThemes == true) {
+                @each $theme, $color in $themes {
+                    .custom-color-#{$theme} & {
+                        color: map-get($color, default) !important;
+                    }
+                }
+            }
         }
     }
 
@@ -115,7 +123,14 @@
         background-color: transparent;
 
         > a {
-            color: $green !important;
+            // Color theme styles
+            @if ($includeThemes == true) {
+                @each $theme, $color in $themes {
+                    .custom-color-#{$theme} & {
+                        color: map-get($color, default) !important;
+                    }
+                }
+            }
         }
     }
 }

@@ -7,5 +7,6 @@ class App
     {
         new \Dunkers\Theme\Enqueue();
         new \Dunkers\Theme\Filters();
+        new \Dunkers\Theme\Color();
     }
 }

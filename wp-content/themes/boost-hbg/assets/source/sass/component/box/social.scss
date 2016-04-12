@@ -30,7 +30,14 @@
                     }
 
                     &:hover:after {
-                        background-color: rgba($green-dark,.6);
+                        // Color theme styles
+                        @if ($includeThemes == true) {
+                            @each $theme, $color in $themes {
+                                .custom-color-#{$theme} & {
+                                    background-color: rgba(map-get($color, dark),.6);
+                                }
+                            }
+                        }
                     }
                 }
 

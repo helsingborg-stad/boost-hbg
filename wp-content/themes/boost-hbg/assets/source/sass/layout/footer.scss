@@ -1,7 +1,15 @@
 
     footer.main-footer {
         margin-top: 0;
-        background-color: $green-medium;
+
+        // Color theme styles
+        @if ($includeThemes == true) {
+            @each $theme, $color in $themes {
+                .custom-color-#{$theme} & {
+                    background-color: map-get($color, medium);
+                }
+            }
+        }
 
         &.main-footer .logotype img,
         &.main-footer .logotype svg {

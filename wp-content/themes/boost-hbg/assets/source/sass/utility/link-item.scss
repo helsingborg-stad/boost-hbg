@@ -6,7 +6,14 @@
 
     &:hover {
         &::before {
-            color: $green;
+            // Color theme styles
+            @if ($includeThemes == true) {
+                @each $theme, $color in $themes {
+                    .custom-color-#{$theme} & {
+                        color: map-get($color, default);
+                    }
+                }
+            }
         }
     }
 }

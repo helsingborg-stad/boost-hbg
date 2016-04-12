@@ -1,3 +1,10 @@
 .btn.btn-primary {
-    background-color: $green-dark;
+    // Color theme styles
+    @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+                background-color: map-get($color, dark);
+            }
+        }
+    }
 }

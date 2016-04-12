@@ -67,7 +67,16 @@
             transition: 500ms all cubic-bezier(0.410, 0.405, 0.065, 0.990);
             content: "";
             top: 0;
-            background: rgba($green,.8);
+
+            // Color theme styles
+            @if ($includeThemes == true) {
+                @each $theme, $color in $themes {
+                    .custom-color-#{$theme} & {
+                        background-color: map-get($color, default);
+                    }
+                }
+            }
+
             display: block;
             position: absolute;
             transform: rotate(37deg) translate(-50%, -50%);
@@ -85,7 +94,14 @@
 &.menu-open #site-header,
 &.no-js #site-header {
 
-    background-color: rgba($green-dark,.9);
+    // Color theme styles
+    @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+                background-color: rgba(map-get($color, dark),.9);
+            }
+        }
+    }
 
     .logotype {
         &:before {
@@ -104,3 +120,5 @@
         display: none;
     }
 }
+
+

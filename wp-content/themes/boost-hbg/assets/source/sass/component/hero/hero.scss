@@ -132,7 +132,14 @@ div:not(.hero) > .modularity-mod-slider {
 
     [class*=slider-nav-] {
         transition: background 200ms;
-        background: rgba($green,.95);
+        // Color theme styles
+        @if ($includeThemes == true) {
+            @each $theme, $color in $themes {
+                .custom-color-#{$theme} & {
+                    background: rgba(map-get($color, default),.95);
+                }
+            }
+        }
         border-radius: 0;
         text-indent: -500px;
         overflow: hidden;
@@ -164,7 +171,14 @@ div:not(.hero) > .modularity-mod-slider {
         }
 
         &:hover {
-            background-color: rgba($green,.9);
+            // Color theme styles
+            @if ($includeThemes == true) {
+                @each $theme, $color in $themes {
+                    .custom-color-#{$theme} & {
+                        background-color: rgba(map-get($color, default),.9);
+                    }
+                }
+            }
         }
 
     }

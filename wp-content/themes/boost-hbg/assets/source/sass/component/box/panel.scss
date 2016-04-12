@@ -1,7 +1,14 @@
 
     .box-panel {
         .box-title {
-            border-bottom-color: $green;
+            // Color theme styles
+            @if ($includeThemes == true) {
+                @each $theme, $color in $themes {
+                    .custom-color-#{$theme} & {
+                        border-bottom-color: map-get($color, default);
+                    }
+                }
+            }
             color: #000;
 
             &:empty {
@@ -13,11 +20,25 @@
             li {
 
                 a, a .link-item:before {
-                    color: $green-dark;
+                    // Color theme styles
+                    @if ($includeThemes == true) {
+                        @each $theme, $color in $themes {
+                            .custom-color-#{$theme} & {
+                                color: map-get($color, dark);
+                            }
+                        }
+                    }
                 }
 
                 time {
-                    color: $green-medium;
+                    // Color theme styles
+                    @if ($includeThemes == true) {
+                        @each $theme, $color in $themes {
+                            .custom-color-#{$theme} & {
+                                color: map-get($color, medium);
+                            }
+                        }
+                    }
                 }
             }
         }
