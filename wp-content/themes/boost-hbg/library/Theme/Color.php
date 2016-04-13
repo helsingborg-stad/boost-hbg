@@ -46,7 +46,7 @@ class Color
                     ),
                     'allow_null' => 0,
                     'multiple' => 0,
-                    'ui' => 1,
+                    'ui' => 0,
                     'ajax' => 0,
                     'placeholder' => '',
                     'disabled' => 0,

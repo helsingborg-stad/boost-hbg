@@ -27,31 +27,12 @@
             z-index: 91;
         }
 
-        &::after {
-            z-index: 90;
-            width: 250vh;
-            height: 250vh;
-            min-width: 2000px;
-            min-height: 2000px;
-            background-color: rgba(#fff, .99);
-        }
-
-        .menu-icon::after,
-        .menu-icon::before {
-            background-color: #000;
-        }
     }
 }
 
 #site-header.liquid-header,
 &:not(.home) #site-header,
 &.menu-open #site-header {
-    .menu-icon,
-    .menu-icon:after,
-    .menu-icon:before {
-        background: $black;
-    }
-
     .menu-trigger.open {
         .menu-icon {
             background-color: transparent;
@@ -59,35 +40,68 @@
     }
 }
 
+&.mobile-menu-open #site-header {
+    @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+                background-color: rgba(map-get($color, dark),.94);
+            }
+        }
+    }
+}
+
 .nav-mobile-menu {
     @include cover();
-    top: 70px;
+    top: 60px;
     position: fixed;
-    background: transparent;
     z-index: 99;
     text-align: center;
     overflow: auto;
+    transition: opacity 200ms cubic-bezier(0.410, 0.405, 0.065, 0.990);
+    opacity: 0;
+
+    @media screen and (min-width: #{$screen-md-min}) {
+        top: 80px;
+    }
+
+    &.open {
+        opacity: 1;
+    }
+
+    @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+                background-color: rgba(map-get($color, dark),.95);
+                border-top: 1px solid rgba(map-get($color, default),.9);
+            }
+        }
+    }
 }
 
 .nav-mobile {
     background: transparent;
     display: block;
-    max-width: 90%;
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30px;
+    margin-right: 30px;
 
     > li a {
         padding: 6px 0;
     }
 
     > li + li {
-        border-top: 1px solid rgba($black, .1);
+        @if ($includeThemes == true) {
+            @each $theme, $color in $themes {
+                .custom-color-#{$theme} & {
+                    border-top: 1px solid rgba(lighten(map-get($color, default),20%),.2) !important;
+                }
+            }
+        }
     }
 
     a {
         text-transform: uppercase;
-        color: $black;
+        color: #fff;
         font-size: 1.1em;
         font-weight: normal;
 
@@ -98,7 +112,7 @@
             @if ($includeThemes == true) {
                 @each $theme, $color in $themes {
                     .custom-color-#{$theme} & {
-                        color: map-get($color, default) !important;
+                        color: lighten(map-get($color, default),20%) !important;
                     }
                 }
             }
@@ -114,20 +128,36 @@
             a {
                 display: block;
                 padding: .2em 0;
-                color: $black;
+
+                @if ($includeThemes == true) {
+                    @each $theme, $color in $themes {
+                        .custom-color-#{$theme} & {
+                            color: lighten(map-get($color, default),20%) !important;
+                        }
+                    }
+                }
             }
         }
     }
 
     .current {
         background-color: transparent;
+        text-decoration: underline;
 
-        > a {
+        > a:after {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            float: right;
+            margin-top: 7px;
+
             // Color theme styles
             @if ($includeThemes == true) {
                 @each $theme, $color in $themes {
                     .custom-color-#{$theme} & {
-                        color: map-get($color, default) !important;
+                        background-color: lighten(map-get($color, default),20%) !important;
                     }
                 }
             }
@@ -136,9 +166,40 @@
 }
 
 .nav-mobile-menu .search {
-    max-width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 20px;
+    background-color: transparent;
+
+    input[type="search"] {
+        color: #fff;
+
+        &::placeholder {
+            color: #fff;
+        }
+
+        // Color theme styles
+        @if ($includeThemes == true) {
+            @each $theme, $color in $themes {
+                .custom-color-#{$theme} & {
+                    background-color: map-get($color, dark) !important;
+                }
+            }
+        }
+    }
+
+    input[type="submit"] {
+
+        border: 1px solid #fff;
+        border-left: none;
+
+        // Color theme styles
+        @if ($includeThemes == true) {
+            @each $theme, $color in $themes {
+                .custom-color-#{$theme} & {
+                    background-color: map-get($color, dark) !important;
+                }
+            }
+        }
+    }
 
     label {
         display: none;

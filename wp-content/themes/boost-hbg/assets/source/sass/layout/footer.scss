@@ -13,8 +13,8 @@
 
         &.main-footer .logotype img,
         &.main-footer .logotype svg {
-            height: 90px;
-            transform: rotate(0) scale(.7);
+            height: 40px;
+            transform: rotate(0) scale(.9);
             transform-origin: 20% 40%;
             transition: 200ms all;
 
@@ -31,7 +31,7 @@
                     opacity: .7;
                 }
 
-                transform: rotate(-4deg) scale(1);
+                transform: rotate(-1deg) scale(1);
             }
         }
 
@@ -48,6 +48,18 @@
 
         .box, [class^=widget_]:not(.widget_calendar) {
             margin-bottom: 30px;
+        }
+
+        ul.icons-list {
+            text-align: right;
+
+            li:last-child {
+                padding-right: 0;
+            }
+
+            li a {
+                font-size: 1.4em;
+            }
         }
 
     }
