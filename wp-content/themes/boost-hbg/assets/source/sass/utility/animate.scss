@@ -1,21 +1,25 @@
-.animated {
-  animation-duration: 500ms;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.410, 0.405, 0.065, 0.990);
-}
+@media screen and (min-width: #{$screen-md-min}) {
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 50%, 0);
+  .animated {
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.410, 0.405, 0.065, 0.990);
   }
 
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 50%, 0);
+    }
 
-.fadeInUp {
-  animation-name: fadeInUp;
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+
 }
