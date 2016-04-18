@@ -10,11 +10,11 @@ $green-light: lighten($green,5%);
 $green-medium: darken($green,25%);
 $green-dark: darken($green,40%);
 
-$yellow: #FC8200;
+$yellow: #FF5722; //Orginal: rgb(252,217,0);
 $yellow-subtile: rgba($yellow,.2);
 $yellow-light: lighten($yellow,5%);
-$yellow-medium: darken($yellow,25%);
-$yellow-dark: darken($yellow,40%);
+$yellow-medium: darken($yellow,10%);
+$yellow-dark: darken($yellow,20%);
 
 $pink: rgb(218,72,126);
 $pink-subtile: rgba($pink,.2);
