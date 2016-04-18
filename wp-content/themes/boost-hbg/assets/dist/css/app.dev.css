@@ -363,6 +363,11 @@ html.translated-ltr #site-header {
       background-color: #ee3900; }
     .custom-color-cerise .is-child-theme footer.main-footer {
       background-color: #da487e; }
+    @media screen and (max-width: 767px) {
+      .is-child-theme footer.main-footer .logotype {
+        display: none !important; }
+      .is-child-theme footer.main-footer .sidebar-footer-area + .grid-table > div {
+        display: block; } }
     .is-child-theme footer.main-footer.main-footer .logotype img,
     .is-child-theme footer.main-footer.main-footer .logotype svg {
       height: 40px;
@@ -398,6 +403,9 @@ html.translated-ltr #site-header {
       margin-bottom: 30px; }
     .is-child-theme footer.main-footer ul.icons-list {
       text-align: right; }
+      @media screen and (max-width: 767px) {
+        .is-child-theme footer.main-footer ul.icons-list {
+          text-align: center; } }
       .is-child-theme footer.main-footer ul.icons-list li:last-child {
         padding-right: 0; }
       .is-child-theme footer.main-footer ul.icons-list li a {

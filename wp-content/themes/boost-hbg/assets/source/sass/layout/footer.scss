@@ -11,6 +11,16 @@
             }
         }
 
+        @media screen and (max-width: #{$screen-md-min}) {
+            .logotype {
+                display: none !important;
+            }
+
+            .sidebar-footer-area + .grid-table > div {
+                display: block;
+            }
+        }
+
         &.main-footer .logotype img,
         &.main-footer .logotype svg {
             height: 40px;
@@ -52,6 +62,10 @@
 
         ul.icons-list {
             text-align: right;
+
+            @media screen and (max-width: #{$screen-md-min}) {
+                text-align: center;
+            }
 
             li:last-child {
                 padding-right: 0;
