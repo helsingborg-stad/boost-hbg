@@ -3,7 +3,7 @@ jQuery(function() {
     //Declarations
     var $window         = $(window),
     win_height_padded   = $window.height() * 1.1,
-    targetWrapper       = 'main [class^="modularity-mod-"] [class^="grid-"], .social-feed > li, .sidebar-footer-area > .grid-lg-4',
+    targetWrapper       = 'main [class^="modularity-mod-"] [class^="grid-"], .social-feed > li, .sidebar-footer-area > [class^="grid-"], .modularity-mod-table .box-panel, div:not(.hero) > .modularity-mod-slider .slider, .modularity-mod-inlaylist > .box-panel, .modularity-mod-iframe > iframe, .modularity-mod-contact > .box-card',
     target;
 
     //Scroll event
