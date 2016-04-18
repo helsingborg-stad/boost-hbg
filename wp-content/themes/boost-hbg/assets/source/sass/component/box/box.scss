@@ -44,6 +44,10 @@
 
     .box-content {
         padding: 7px 15px 15px 15px;
-        backdrop-filter: blur(1px);
+        backdrop-filter: blur(2px);
+        -o-backdrop-filter: blur(2px);
+        -ms-backdrop-filter: blur(2px);
+        -moz-backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
     }
 }
