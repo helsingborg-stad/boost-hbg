@@ -315,6 +315,11 @@ html.translated-ltr #site-header {
       @media screen and (min-width: 1280px) {
         .is-child-theme #main-menu li {
           margin-left: 7px; } }
+      @media screen and (max-width: 1280px) and (min-width: 959px) {
+        .is-child-theme #main-menu li {
+          margin: 0 3px; }
+          .is-child-theme #main-menu li > a {
+            padding: 10px 5px; } }
       .is-child-theme #main-menu li > a {
         text-transform: uppercase;
         font-size: 1em;
