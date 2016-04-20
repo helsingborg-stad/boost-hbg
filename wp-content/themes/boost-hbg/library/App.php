@@ -1,12 +1,12 @@
 <?php
-namespace Dunkers;
+namespace BoostHBG;
 
 class App
 {
     public function __construct()
     {
-        new \Dunkers\Theme\Enqueue();
-        new \Dunkers\Theme\Filters();
-        new \Dunkers\Theme\Color();
+        new \BoostHBG\Theme\Enqueue();
+        new \BoostHBG\Theme\Filters();
+        new \BoostHBG\Theme\Color();
     }
 }

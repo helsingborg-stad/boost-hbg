@@ -1,16 +1,16 @@
 <?php
 
-define('DUNKERS_PATH', get_stylesheet_directory() . '/');
+define('BOOST_PATH', get_stylesheet_directory() . '/');
 
 //Include vendor files
 if (file_exists(dirname(ABSPATH) . '/vendor/autoload.php')) {
     require_once dirname(ABSPATH) . '/vendor/autoload.php';
 }
 
-require_once DUNKERS_PATH . 'library/Vendor/Psr4ClassLoader.php';
-$loader = new Dunkers\Vendor\Psr4ClassLoader();
-$loader->addPrefix('Dunkers', DUNKERS_PATH . 'library');
-$loader->addPrefix('Dunkers', DUNKERS_PATH . 'source/php/');
+require_once BOOST_PATH . 'library/Vendor/Psr4ClassLoader.php';
+$loader = new BoostHBG\Vendor\Psr4ClassLoader();
+$loader->addPrefix('BoostHBG', BOOST_PATH . 'library');
+$loader->addPrefix('BoostHBG', BOOST_PATH . 'source/php/');
 $loader->register();
 
-new Dunkers\App();
+new BoostHBG\App();
