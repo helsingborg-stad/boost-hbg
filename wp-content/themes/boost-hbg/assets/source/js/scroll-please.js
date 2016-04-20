@@ -1,7 +1,7 @@
-DunkersKultur = DunkersKultur || {};
-DunkersKultur.ScrollPlease = DunkersKultur.ScrollPlease || {};
+BoostHBG                = BoostHBG || {};
+BoostHBG.ScrollPlease   = BoostHBG.ScrollPlease || {};
 
-DunkersKultur.ScrollPlease.ScrollPlease = (function ($) {
+BoostHBG.ScrollPlease.ScrollPlease = (function ($) {
 
     function ScrollPlease() {
         $(window).on('scroll', function (e) {

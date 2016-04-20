@@ -29,12 +29,12 @@ jQuery(function() {
     revealOnScroll();
 });
 
-var DunkersKultur;
+var BoostHBG;
 
-DunkersKultur = DunkersKultur || {};
-DunkersKultur.Liquid = DunkersKultur.Liquid || {};
+BoostHBG        = BoostHBG || {};
+BoostHBG.Liquid = BoostHBG.Liquid || {};
 
-DunkersKultur.Liquid.Liquid = (function ($) {
+BoostHBG.Liquid.Liquid = (function ($) {
 
 	var TopOffset = 5;
 	var TargetElement = "#site-header";
@@ -82,10 +82,10 @@ DunkersKultur.Liquid.Liquid = (function ($) {
 
 })(jQuery);
 
-DunkersKultur = DunkersKultur || {};
-DunkersKultur.ScrollPlease = DunkersKultur.ScrollPlease || {};
+BoostHBG                = BoostHBG || {};
+BoostHBG.ScrollPlease   = BoostHBG.ScrollPlease || {};
 
-DunkersKultur.ScrollPlease.ScrollPlease = (function ($) {
+BoostHBG.ScrollPlease.ScrollPlease = (function ($) {
 
     function ScrollPlease() {
         $(window).on('scroll', function (e) {

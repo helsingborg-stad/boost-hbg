@@ -1,7 +1,7 @@
-DunkersKultur = DunkersKultur || {};
-DunkersKultur.Liquid = DunkersKultur.Liquid || {};
+BoostHBG        = BoostHBG || {};
+BoostHBG.Liquid = BoostHBG.Liquid || {};
 
-DunkersKultur.Liquid.Liquid = (function ($) {
+BoostHBG.Liquid.Liquid = (function ($) {
 
 	var TopOffset = 5;
 	var TargetElement = "#site-header";
