@@ -1,6 +1,6 @@
 <?php
 
-namespace Dunkers\Theme;
+namespace BoostHBG\Theme;
 
 class Color
 {
@@ -84,7 +84,7 @@ class Color
      * Add child theme class
      * @return string
      */
-    public function addBodyClass($output, $doctype)
+    public function addBodyClass($output, $doctype = "")
     {
 
         //Get color scheme

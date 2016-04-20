@@ -1,6 +1,6 @@
 <?php
 
-namespace Dunkers\Vendor;
+namespace BoostHBG\Vendor;
 
 /**
  * A PSR-4 compatible class loader.

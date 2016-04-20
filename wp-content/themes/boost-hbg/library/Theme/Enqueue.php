@@ -1,6 +1,6 @@
 <?php
 
-namespace Dunkers\Theme;
+namespace BoostHBG\Theme;
 
 class Enqueue
 {
