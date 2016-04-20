@@ -8,5 +8,7 @@ class App
         new \BoostHBG\Theme\Enqueue();
         new \BoostHBG\Theme\Filters();
         new \BoostHBG\Theme\Color();
+
+        new \BoostHBG\Module\HeroSections();
     }
 }
