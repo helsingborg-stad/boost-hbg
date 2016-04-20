@@ -7,7 +7,7 @@ class Color
     public function __construct()
     {
         // Enqueue scripts and styles
-        add_filter('language_attributes', array($this, 'addBodyClass'));
+        add_filter('language_attributes', array($this, 'addBodyClass'), 10, 2);
         add_action('admin_init', array($this, 'registerMetaBox'));
     }
 
