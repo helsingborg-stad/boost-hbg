@@ -1395,9 +1395,11 @@ html.translated-ltr #site-header {
   .custom-color-cerise .is-child-theme .label-theme {
     background-color: #a92254; }
   @media screen and (min-width: 767px) {
+    .is-child-theme main [class^="modularity-mod-"] [class^="grid-"], .is-child-theme .social-feed > li, .is-child-theme .sidebar-footer-area > [class^="grid-"], .is-child-theme .modularity-mod-table .box-panel, .is-child-theme div:not(.hero) > .modularity-mod-slider .slider, .is-child-theme .modularity-mod-inlaylist > .box-panel, .is-child-theme .modularity-mod-iframe > iframe, .is-child-theme .modularity-mod-contact > .box-card {
+      visibility: hidden; }
     .is-child-theme .animated {
-      -webkit-animation-duration: 500ms;
-              animation-duration: 500ms;
+      -webkit-animation-duration: 700ms;
+              animation-duration: 700ms;
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both;
       -webkit-animation-timing-function: cubic-bezier(0.41, 0.405, 0.065, 0.99);
@@ -1405,8 +1407,8 @@ html.translated-ltr #site-header {
     @-webkit-keyframes fadeInUp {
       from {
         opacity: 0;
-        -webkit-transform: translate3d(0, 50%, 0);
-                transform: translate3d(0, 50%, 0); }
+        -webkit-transform: translate3d(0, 70%, 0);
+                transform: translate3d(0, 70%, 0); }
       to {
         opacity: 1;
         -webkit-transform: none;
@@ -1414,8 +1416,8 @@ html.translated-ltr #site-header {
     @keyframes fadeInUp {
       from {
         opacity: 0;
-        -webkit-transform: translate3d(0, 50%, 0);
-                transform: translate3d(0, 50%, 0); }
+        -webkit-transform: translate3d(0, 70%, 0);
+                transform: translate3d(0, 70%, 0); }
       to {
         opacity: 1;
         -webkit-transform: none;
