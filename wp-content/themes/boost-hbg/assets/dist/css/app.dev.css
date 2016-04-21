@@ -1500,6 +1500,18 @@ html.translated-ltr #site-header {
     margin: 20px 0;
     background: #eee;
     text-align: center; }
+  .custom-color-green .is-child-theme .comment .comment-text {
+    background-color: #1f5d4a; }
+  .custom-color-yellow .is-child-theme .comment .comment-text {
+    background-color: #bb2d00; }
+  .custom-color-cerise .is-child-theme .comment .comment-text {
+    background-color: #a92254; }
+  .custom-color-green .is-child-theme .comment .comment-text:before {
+    border-bottom-color: #1f5d4a; }
+  .custom-color-yellow .is-child-theme .comment .comment-text:before {
+    border-bottom-color: #bb2d00; }
+  .custom-color-cerise .is-child-theme .comment .comment-text:before {
+    border-bottom-color: #a92254; }
   .custom-color-green .is-child-theme .label-theme {
     background-color: #1f5d4a; }
   .custom-color-yellow .is-child-theme .label-theme {
