@@ -1122,6 +1122,142 @@ html.translated-ltr #site-header {
           margin-right: 15px; }
         .is-child-theme .modularity-mod-social .box.box-panel ul.social-feed-instagram li:hover .mod-social-user span, .is-child-theme .modularity-mod-social .box.box-panel ul.social-feed-pinterest li:hover .mod-social-user span {
           margin-top: 25px; }
+  .is-child-theme .box-event {
+    position: relative;
+    display: block;
+    height: 400px;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    .custom-color-green .is-child-theme .box-event {
+      background-color: #76d2b6; }
+    .custom-color-yellow .is-child-theme .box-event {
+      background-color: #FF5722; }
+    .custom-color-cerise .is-child-theme .box-event {
+      background-color: #da487e; }
+    .is-child-theme .box-event .box-image {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      overflow: hidden;
+      -webkit-transition: 300ms all ease-in-out;
+              transition: 300ms all ease-in-out; }
+      .is-child-theme .box-event .box-image img {
+        display: none; }
+      .is-child-theme .box-event .box-image:before {
+        content: "";
+        -webkit-transition: 300ms all ease-in-out;
+                transition: 300ms all ease-in-out;
+        position: absolute;
+        left: -50px;
+        right: -50px;
+        bottom: -100px;
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+        height: 220px; }
+        .custom-color-green .is-child-theme .box-event .box-image:before {
+          background-color: rgba(50, 151, 120, 0.9); }
+        .custom-color-yellow .is-child-theme .box-event .box-image:before {
+          background-color: rgba(238, 57, 0, 0.9); }
+        .custom-color-cerise .is-child-theme .box-event .box-image:before {
+          background-color: rgba(218, 72, 126, 0.9); }
+      .is-child-theme .box-event .box-image::after {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        content: ''; }
+        .custom-color-green .is-child-theme .box-event .box-image::after {
+          background-color: rgba(118, 210, 182, 0.1); }
+        .custom-color-yellow .is-child-theme .box-event .box-image::after {
+          background-color: rgba(255, 87, 34, 0.1); }
+        .custom-color-cerise .is-child-theme .box-event .box-image::after {
+          background-color: rgba(218, 72, 126, 0.1); }
+    .is-child-theme .box-event .event-information {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 15px 20px;
+      -webkit-transition: 300ms all ease-in-out;
+              transition: 300ms all ease-in-out; }
+    .is-child-theme .box-event .event-title {
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.5rem;
+      text-transform: none;
+      margin-bottom: 0px;
+      margin-top: 5px; }
+    .is-child-theme .box-event .event-date-start {
+      padding: 2px 5px;
+      font-size: 1rem;
+      line-height: 1;
+      background-color: #fff;
+      color: #000; }
+    .is-child-theme .box-event .event-lead {
+      opacity: 0;
+      padding: 0 20px 0 20px;
+      -webkit-transition: 300ms all ease-in-out;
+              transition: 300ms all ease-in-out;
+      font-size: .9em;
+      color: #fff;
+      height: 70%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%); }
+      .is-child-theme .box-event .event-lead::after {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        content: ''; }
+    .is-child-theme .box-event .event-action {
+      opacity: 0;
+      -webkit-transition: 300ms opacity ease-in-out, 100ms background-color;
+              transition: 300ms opacity ease-in-out, 100ms background-color;
+      border: 3px solid #fff;
+      padding: 10px 18px;
+      background-color: transparent;
+      color: #fff;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      font-weight: 300; }
+    .is-child-theme .box-event:hover .box-image:before {
+      height: 800px;
+      backdrop-filter: blur(2px);
+      -o-backdrop-filter: blur(2px);
+      -ms-backdrop-filter: blur(2px);
+      -moz-backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px); }
+      .custom-color-green .is-child-theme .box-event:hover .box-image:before {
+        background-color: rgba(31, 93, 74, 0.9); }
+      .custom-color-yellow .is-child-theme .box-event:hover .box-image:before {
+        background-color: rgba(187, 45, 0, 0.9); }
+      .custom-color-cerise .is-child-theme .box-event:hover .box-image:before {
+        background-color: rgba(169, 34, 84, 0.9); }
+    .is-child-theme .box-event:hover .event-information {
+      -webkit-transform: translateY(70%);
+              transform: translateY(70%);
+      opacity: 0; }
+    .is-child-theme .box-event:hover .event-lead {
+      opacity: 0; }
+    .is-child-theme .box-event:hover .event-action {
+      display: block;
+      opacity: 1; }
   .is-child-theme .dataTables_wrapper {
     border: 0;
     margin-left: 0;
@@ -1369,7 +1505,6 @@ html.translated-ltr #site-header {
     .is-child-theme .page-numbers a,
     .is-child-theme .page-numbers .current {
       display: block;
-      border: 2px solid #000;
       font-size: .85em;
       font-weight: bold;
       text-align: center;
@@ -1380,6 +1515,21 @@ html.translated-ltr #site-header {
       line-height: 32px;
       -webkit-transition: 100ms all;
               transition: 100ms all; }
+      .custom-color-green .is-child-theme .pagination a, .custom-color-green
+      .is-child-theme .pagination .current, .custom-color-green
+      .is-child-theme .page-numbers a, .custom-color-green
+      .is-child-theme .page-numbers .current {
+        border: 2px solid #1f5d4a; }
+      .custom-color-yellow .is-child-theme .pagination a, .custom-color-yellow
+      .is-child-theme .pagination .current, .custom-color-yellow
+      .is-child-theme .page-numbers a, .custom-color-yellow
+      .is-child-theme .page-numbers .current {
+        border: 2px solid #bb2d00; }
+      .custom-color-cerise .is-child-theme .pagination a, .custom-color-cerise
+      .is-child-theme .pagination .current, .custom-color-cerise
+      .is-child-theme .page-numbers a, .custom-color-cerise
+      .is-child-theme .page-numbers .current {
+        border: 2px solid #a92254; }
       .is-child-theme .pagination a:hover, .is-child-theme .pagination a:focus, .is-child-theme .pagination a.current,
       .is-child-theme .pagination .current:hover,
       .is-child-theme .pagination .current:focus,
@@ -1390,10 +1540,44 @@ html.translated-ltr #site-header {
       .is-child-theme .page-numbers .current:hover,
       .is-child-theme .page-numbers .current:focus,
       .is-child-theme .page-numbers .current.current {
-        background-color: #000;
-        border-color: #000;
         color: #fff;
         text-decoration: none; }
+        .custom-color-green .is-child-theme .pagination a:hover, .custom-color-green .is-child-theme .pagination a:focus, .custom-color-green .is-child-theme .pagination a.current, .custom-color-green
+        .is-child-theme .pagination .current:hover, .custom-color-green
+        .is-child-theme .pagination .current:focus, .custom-color-green
+        .is-child-theme .pagination .current.current, .custom-color-green
+        .is-child-theme .page-numbers a:hover, .custom-color-green
+        .is-child-theme .page-numbers a:focus, .custom-color-green
+        .is-child-theme .page-numbers a.current, .custom-color-green
+        .is-child-theme .page-numbers .current:hover, .custom-color-green
+        .is-child-theme .page-numbers .current:focus, .custom-color-green
+        .is-child-theme .page-numbers .current.current {
+          background-color: #1f5d4a;
+          border-color: #1f5d4a; }
+        .custom-color-yellow .is-child-theme .pagination a:hover, .custom-color-yellow .is-child-theme .pagination a:focus, .custom-color-yellow .is-child-theme .pagination a.current, .custom-color-yellow
+        .is-child-theme .pagination .current:hover, .custom-color-yellow
+        .is-child-theme .pagination .current:focus, .custom-color-yellow
+        .is-child-theme .pagination .current.current, .custom-color-yellow
+        .is-child-theme .page-numbers a:hover, .custom-color-yellow
+        .is-child-theme .page-numbers a:focus, .custom-color-yellow
+        .is-child-theme .page-numbers a.current, .custom-color-yellow
+        .is-child-theme .page-numbers .current:hover, .custom-color-yellow
+        .is-child-theme .page-numbers .current:focus, .custom-color-yellow
+        .is-child-theme .page-numbers .current.current {
+          background-color: #bb2d00;
+          border-color: #bb2d00; }
+        .custom-color-cerise .is-child-theme .pagination a:hover, .custom-color-cerise .is-child-theme .pagination a:focus, .custom-color-cerise .is-child-theme .pagination a.current, .custom-color-cerise
+        .is-child-theme .pagination .current:hover, .custom-color-cerise
+        .is-child-theme .pagination .current:focus, .custom-color-cerise
+        .is-child-theme .pagination .current.current, .custom-color-cerise
+        .is-child-theme .page-numbers a:hover, .custom-color-cerise
+        .is-child-theme .page-numbers a:focus, .custom-color-cerise
+        .is-child-theme .page-numbers a.current, .custom-color-cerise
+        .is-child-theme .page-numbers .current:hover, .custom-color-cerise
+        .is-child-theme .page-numbers .current:focus, .custom-color-cerise
+        .is-child-theme .page-numbers .current.current {
+          background-color: #a92254;
+          border-color: #a92254; }
     .is-child-theme .pagination a:not(.next):not(.prev),
     .is-child-theme .page-numbers a:not(.next):not(.prev) {
       width: 35px;
