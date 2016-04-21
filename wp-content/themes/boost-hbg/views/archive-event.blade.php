@@ -11,6 +11,7 @@
         </div>
     </div>
 
+    <!--
     <div class="grid">
         <div class="grid-sm-12">
             <nav id="show-filters" class="navbar navbar-event-categories">
@@ -37,6 +38,7 @@
             </nav>
         </div>
     </div>
+    -->
 
     <div class="grid">
         <div class="grid-md-12">
