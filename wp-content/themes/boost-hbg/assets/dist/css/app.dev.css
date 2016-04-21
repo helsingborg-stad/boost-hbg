@@ -1019,7 +1019,8 @@ html.translated-ltr #site-header {
     .is-child-theme .mod-herosection-table > section {
       display: table-cell;
       vertical-align: middle;
-      text-align: center; }
+      text-align: center;
+      white-space: nowrap; }
       .is-child-theme .mod-herosection-table > section + section {
         margin-top: 10px; }
       @media (max-width: 767px) {
