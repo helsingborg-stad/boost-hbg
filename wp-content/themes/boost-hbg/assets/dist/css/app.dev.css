@@ -1131,6 +1131,49 @@ html.translated-ltr #site-header {
   .is-child-theme .image-gallery .box-index {
     border: none;
     margin-bottom: 30px; }
+  .is-child-theme .main-footer {
+    overflow: hidden; }
+    .is-child-theme .main-footer .container {
+      position: relative; }
+      .is-child-theme .main-footer .container .grid {
+        position: relative;
+        z-index: 99; }
+      .is-child-theme .main-footer .container::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: -50%;
+        left: -50px;
+        height: 200%;
+        width: 75%;
+        background-color: rgba(31, 93, 74, 0.5);
+        -webkit-transform: rotate(-10deg);
+                transform: rotate(-10deg); }
+        .custom-color-green .is-child-theme .main-footer .container::before {
+          background-color: rgba(31, 93, 74, 0.5); }
+        .custom-color-yellow .is-child-theme .main-footer .container::before {
+          background-color: rgba(187, 45, 0, 0.5); }
+        .custom-color-cerise .is-child-theme .main-footer .container::before {
+          background-color: rgba(169, 34, 84, 0.5); }
+      .is-child-theme .main-footer .container::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: -50%;
+        right: -50px;
+        height: 200%;
+        width: 75%;
+        background-color: rgba(31, 93, 74, 0.5);
+        -webkit-transform: rotate(10deg);
+                transform: rotate(10deg); }
+        .custom-color-green .is-child-theme .main-footer .container::after {
+          background-color: rgba(31, 93, 74, 0.5); }
+        .custom-color-yellow .is-child-theme .main-footer .container::after {
+          background-color: rgba(187, 45, 0, 0.5); }
+        .custom-color-cerise .is-child-theme .main-footer .container::after {
+          background-color: rgba(169, 34, 84, 0.5); }
   .is-child-theme .menu-trigger[data-target="#mobile-menu"]::after {
     display: block;
     content: '';
