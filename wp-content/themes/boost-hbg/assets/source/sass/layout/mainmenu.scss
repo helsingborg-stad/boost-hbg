@@ -57,6 +57,14 @@
             margin-left: 7px;
         }
 
+        @media screen and (max-width: #{$screen-lg-max}) and (min-width: #{$screen-lg-min}) {
+            margin: 0 3px;
+
+            > a {
+                padding: 10px 5px;
+            }
+        }
+
         > a {
             text-transform: uppercase;
             font-size: 1em;

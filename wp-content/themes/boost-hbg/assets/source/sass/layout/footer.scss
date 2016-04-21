@@ -1,6 +1,7 @@
 
     footer.main-footer {
         margin-top: 0;
+        overflow: hidden;
 
         // Color theme styles
         @if ($includeThemes == true) {
@@ -16,13 +17,24 @@
                 display: none !important;
             }
 
-            .sidebar-footer-area + .grid-table > div {
-                display: block;
-            }
         }
 
-        &.main-footer .logotype img,
-        &.main-footer .logotype svg {
+        @media screen and (min-width: #{$screen-md-min}) {
+
+            .sidebar-footer-area + .grid-table {
+                float: right;
+                width: 50%;
+            }
+
+            .grid:not(.sidebar-footer-area):not(.grid-table) {
+                float: left;
+                width: 50%;
+            }
+
+        }
+
+        .logotype img,
+        .logotype svg {
             height: 40px;
             transform: rotate(0) scale(.9);
             transform-origin: 20% 40%;

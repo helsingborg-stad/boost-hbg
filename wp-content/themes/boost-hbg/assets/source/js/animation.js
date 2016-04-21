@@ -6,6 +6,9 @@ jQuery(function() {
     targetWrapper       = 'main [class^="modularity-mod-"] [class^="grid-"], .social-feed > li, .sidebar-footer-area > [class^="grid-"], .modularity-mod-table .box-panel, div:not(.hero) > .modularity-mod-slider .slider, .modularity-mod-inlaylist > .box-panel, .modularity-mod-iframe > iframe, .modularity-mod-contact > .box-card',
     target;
 
+    //On load visibility
+    jQuery(targetWrapper).css("visibility", "visible");
+
     //Scroll event
     $window.on('scroll', revealOnScroll);
 
