@@ -383,13 +383,6 @@ html.translated-ltr #site-header {
     @media screen and (max-width: 767px) {
       .is-child-theme footer.main-footer .logotype {
         display: none !important; } }
-    @media screen and (min-width: 767px) {
-      .is-child-theme footer.main-footer .sidebar-footer-area + .grid-table {
-        float: right;
-        width: 50%; }
-      .is-child-theme footer.main-footer .grid:not(.sidebar-footer-area):not(.grid-table) {
-        float: left;
-        width: 50%; } }
     .is-child-theme footer.main-footer .logotype img,
     .is-child-theme footer.main-footer .logotype svg {
       height: 40px;
@@ -428,10 +421,37 @@ html.translated-ltr #site-header {
       @media screen and (max-width: 767px) {
         .is-child-theme footer.main-footer ul.icons-list {
           text-align: center; } }
-      .is-child-theme footer.main-footer ul.icons-list li:last-child {
-        padding-right: 0; }
+      .is-child-theme footer.main-footer ul.icons-list li {
+        padding: 0; }
       .is-child-theme footer.main-footer ul.icons-list li a {
-        font-size: 1.4em; }
+        display: inline-block;
+        font-size: 2em;
+        position: relative;
+        text-align: center;
+        width: 50px;
+        height: 50px; }
+        .is-child-theme footer.main-footer ul.icons-list li a i.fa {
+          position: relative;
+          z-index: 2; }
+        .is-child-theme footer.main-footer ul.icons-list li a::before {
+          position: absolute;
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          -webkit-transform-origin: center center;
+                  transform-origin: center center;
+          width: 50px;
+          height: 50px;
+          left: 0;
+          top: 0;
+          border-radius: 50%;
+          background-color: #000;
+          content: '';
+          z-index: 0;
+          -webkit-transition: -webkit-transform 300ms;
+                  transition: transform 300ms; }
+        .is-child-theme footer.main-footer ul.icons-list li a:hover::before {
+          -webkit-transform: scale(1);
+                  transform: scale(1); }
   .is-child-theme h1, .is-child-theme .h1,
   .is-child-theme h2, .is-child-theme .h2,
   .is-child-theme h3, .is-child-theme .h3,
