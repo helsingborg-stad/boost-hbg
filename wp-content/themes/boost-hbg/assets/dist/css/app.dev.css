@@ -1784,3 +1784,5 @@ html.translated-ltr #site-header {
               animation-name: fadeInUp; } }
   .is-child-theme .modularity-mod-inheritpost {
     margin-bottom: 30px; }
+  .is-child-theme .mod-herosection {
+    background-color: rgba(0, 0, 0, 0.18); }
