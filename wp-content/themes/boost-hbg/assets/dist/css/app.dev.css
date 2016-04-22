@@ -99,9 +99,11 @@ html.video-is-playing .scroll-down-please {
 html.translated-ltr #site-header {
   top: 39px; }
 
-.animation {
-  -webkit-animation-duration: 500ms;
-          animation-duration: 500ms; }
+.animated {
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms; }
 
 .is-child-theme {
   /* Hidden directors */ }
