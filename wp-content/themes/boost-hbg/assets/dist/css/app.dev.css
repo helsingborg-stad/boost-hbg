@@ -443,7 +443,7 @@ html.translated-ltr #site-header {
             padding: 10px 5px; } }
       .is-child-theme #main-menu li > a {
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: 1.1em;
         line-height: 100%;
         color: #fff;
         font-family: "Queue", "Helvetica", "Arial";
@@ -454,7 +454,8 @@ html.translated-ltr #site-header {
            -moz-user-select: none;
             -ms-user-select: none;
                 user-select: none;
-        text-rendering: geometricPrecision; }
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased; }
         @media screen and (min-width: 1280px) {
           .is-child-theme #main-menu li > a:not(.search-icon-btn):not(.translate-icon-btn) {
             padding: 10px 12px; } }
