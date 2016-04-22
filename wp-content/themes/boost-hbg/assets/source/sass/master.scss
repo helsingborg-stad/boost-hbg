@@ -31,5 +31,10 @@ html.translated-ltr #site-header {
 
 .animated {
     animation-duration: 700ms;
-    animation-delay: 100ms;
+
+    @for $item from 1 through 40 {
+        &:nth-child(#{$item}){
+            animation-delay: #{100+$item*50}ms;
+        }
+    }
 }

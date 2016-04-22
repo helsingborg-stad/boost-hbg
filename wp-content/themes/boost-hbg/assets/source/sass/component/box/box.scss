@@ -9,7 +9,6 @@
     h5,
     h6 {
         font-weight: bold;
-        text-transform: uppercase;
     }
 }
 
@@ -40,6 +39,10 @@
 
     p, li, a {
         color: #fff;
+    }
+
+    .box-title {
+        padding: 15px 15px 7px 15px !important;
     }
 
     .box-content {

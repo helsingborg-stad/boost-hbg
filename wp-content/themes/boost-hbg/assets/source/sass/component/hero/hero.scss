@@ -61,7 +61,7 @@ div:not(.hero) > .modularity-mod-slider {
         }
     }
 
-    .text-block {
+    .text-block.text-block-center {
         @include center();
         font-family: $boost-font-family;
         text-align: center;
@@ -75,8 +75,9 @@ div:not(.hero) > .modularity-mod-slider {
         background-color: transparent !important;
         font-weight: 300;
 
-        /* Text shadows */
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.28);
+        span {
+            text-shadow: none;
+        }
 
         @media screen and #{$screen-below-md} {
             font-size: 1.3em;

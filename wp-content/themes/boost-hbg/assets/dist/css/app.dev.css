@@ -1,7 +1,6 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
 body.is-child-theme {
-  font-family: "Lato", "Roboto", "Helvetica", "Arial";
+  font-family: "Queue", "Helvetica", "Arial";
   font-size: 17px;
   line-height: 1.6;
   color: #000; }
@@ -101,9 +100,127 @@ html.translated-ltr #site-header {
 
 .animated {
   -webkit-animation-duration: 700ms;
-          animation-duration: 700ms;
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms; }
+          animation-duration: 700ms; }
+  .animated:nth-child(1) {
+    -webkit-animation-delay: 150ms;
+            animation-delay: 150ms; }
+  .animated:nth-child(2) {
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms; }
+  .animated:nth-child(3) {
+    -webkit-animation-delay: 250ms;
+            animation-delay: 250ms; }
+  .animated:nth-child(4) {
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms; }
+  .animated:nth-child(5) {
+    -webkit-animation-delay: 350ms;
+            animation-delay: 350ms; }
+  .animated:nth-child(6) {
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms; }
+  .animated:nth-child(7) {
+    -webkit-animation-delay: 450ms;
+            animation-delay: 450ms; }
+  .animated:nth-child(8) {
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms; }
+  .animated:nth-child(9) {
+    -webkit-animation-delay: 550ms;
+            animation-delay: 550ms; }
+  .animated:nth-child(10) {
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms; }
+  .animated:nth-child(11) {
+    -webkit-animation-delay: 650ms;
+            animation-delay: 650ms; }
+  .animated:nth-child(12) {
+    -webkit-animation-delay: 700ms;
+            animation-delay: 700ms; }
+  .animated:nth-child(13) {
+    -webkit-animation-delay: 750ms;
+            animation-delay: 750ms; }
+  .animated:nth-child(14) {
+    -webkit-animation-delay: 800ms;
+            animation-delay: 800ms; }
+  .animated:nth-child(15) {
+    -webkit-animation-delay: 850ms;
+            animation-delay: 850ms; }
+  .animated:nth-child(16) {
+    -webkit-animation-delay: 900ms;
+            animation-delay: 900ms; }
+  .animated:nth-child(17) {
+    -webkit-animation-delay: 950ms;
+            animation-delay: 950ms; }
+  .animated:nth-child(18) {
+    -webkit-animation-delay: 1000ms;
+            animation-delay: 1000ms; }
+  .animated:nth-child(19) {
+    -webkit-animation-delay: 1050ms;
+            animation-delay: 1050ms; }
+  .animated:nth-child(20) {
+    -webkit-animation-delay: 1100ms;
+            animation-delay: 1100ms; }
+  .animated:nth-child(21) {
+    -webkit-animation-delay: 1150ms;
+            animation-delay: 1150ms; }
+  .animated:nth-child(22) {
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms; }
+  .animated:nth-child(23) {
+    -webkit-animation-delay: 1250ms;
+            animation-delay: 1250ms; }
+  .animated:nth-child(24) {
+    -webkit-animation-delay: 1300ms;
+            animation-delay: 1300ms; }
+  .animated:nth-child(25) {
+    -webkit-animation-delay: 1350ms;
+            animation-delay: 1350ms; }
+  .animated:nth-child(26) {
+    -webkit-animation-delay: 1400ms;
+            animation-delay: 1400ms; }
+  .animated:nth-child(27) {
+    -webkit-animation-delay: 1450ms;
+            animation-delay: 1450ms; }
+  .animated:nth-child(28) {
+    -webkit-animation-delay: 1500ms;
+            animation-delay: 1500ms; }
+  .animated:nth-child(29) {
+    -webkit-animation-delay: 1550ms;
+            animation-delay: 1550ms; }
+  .animated:nth-child(30) {
+    -webkit-animation-delay: 1600ms;
+            animation-delay: 1600ms; }
+  .animated:nth-child(31) {
+    -webkit-animation-delay: 1650ms;
+            animation-delay: 1650ms; }
+  .animated:nth-child(32) {
+    -webkit-animation-delay: 1700ms;
+            animation-delay: 1700ms; }
+  .animated:nth-child(33) {
+    -webkit-animation-delay: 1750ms;
+            animation-delay: 1750ms; }
+  .animated:nth-child(34) {
+    -webkit-animation-delay: 1800ms;
+            animation-delay: 1800ms; }
+  .animated:nth-child(35) {
+    -webkit-animation-delay: 1850ms;
+            animation-delay: 1850ms; }
+  .animated:nth-child(36) {
+    -webkit-animation-delay: 1900ms;
+            animation-delay: 1900ms; }
+  .animated:nth-child(37) {
+    -webkit-animation-delay: 1950ms;
+            animation-delay: 1950ms; }
+  .animated:nth-child(38) {
+    -webkit-animation-delay: 2000ms;
+            animation-delay: 2000ms; }
+  .animated:nth-child(39) {
+    -webkit-animation-delay: 2050ms;
+            animation-delay: 2050ms; }
+  .animated:nth-child(40) {
+    -webkit-animation-delay: 2100ms;
+            animation-delay: 2100ms; }
 
 .is-child-theme {
   /* Hidden directors */ }
@@ -159,7 +276,7 @@ html.translated-ltr #site-header {
       bottom: 0;
       opacity: 1; }
   .is-child-theme body.is-child-theme {
-    font-family: "Lato", "Roboto", "Helvetica", "Arial";
+    font-family: "Queue", "Helvetica", "Arial";
     font-size: 17px;
     line-height: 1.6;
     color: #000; }
@@ -179,7 +296,7 @@ html.translated-ltr #site-header {
     left: 0;
     -webkit-transition: all 400ms cubic-bezier(0.41, 0.405, 0.065, 0.99);
             transition: all 400ms cubic-bezier(0.41, 0.405, 0.065, 0.99);
-    font-family: "Queue", "Lato", "Roboto", "Helvetica", "Arial";
+    font-family: "Queue", "Helvetica", "Arial";
     letter-spacing: .02em;
     background-color: rgba(0, 0, 0, 0.4);
     height: 80px;
@@ -329,7 +446,7 @@ html.translated-ltr #site-header {
         font-size: 1em;
         line-height: 100%;
         color: #fff;
-        font-family: "Queue", "Lato", "Roboto", "Helvetica", "Arial";
+        font-family: "Queue", "Helvetica", "Arial";
         position: relative;
         -webkit-transition: color 200ms, background 200ms;
                 transition: color 200ms, background 200ms;
@@ -411,7 +528,7 @@ html.translated-ltr #site-header {
         .is-child-theme footer.main-footer .logotype svg:hover .solid-form {
           opacity: .7; }
     .is-child-theme footer.main-footer .footer-title {
-      font-family: "Queue", "Lato", "Roboto", "Helvetica", "Arial";
+      font-family: "Queue", "Helvetica", "Arial";
       font-size: 1.4em;
       font-weight: 300;
       color: #fff;
@@ -458,14 +575,27 @@ html.translated-ltr #site-header {
         .is-child-theme footer.main-footer ul.icons-list li a:hover::before {
           -webkit-transform: scale(1);
                   transform: scale(1); }
+  .custom-color-green .is-child-theme main#main-content article blockquote {
+    border-color: rgba(118, 210, 182, 0.2); }
+  .custom-color-yellow .is-child-theme main#main-content article blockquote {
+    border-color: rgba(255, 87, 34, 0.2); }
+  .custom-color-cerise .is-child-theme main#main-content article blockquote {
+    border-color: rgba(218, 72, 126, 0.2); }
+  .custom-color-green .is-child-theme main#main-content article blockquote:after, .custom-color-green .is-child-theme main#main-content article blockquote:before {
+    color: #76d2b6; }
+  .custom-color-yellow .is-child-theme main#main-content article blockquote:after, .custom-color-yellow .is-child-theme main#main-content article blockquote:before {
+    color: #FF5722; }
+  .custom-color-cerise .is-child-theme main#main-content article blockquote:after, .custom-color-cerise .is-child-theme main#main-content article blockquote:before {
+    color: #da487e; }
   .is-child-theme h1, .is-child-theme .h1,
   .is-child-theme h2, .is-child-theme .h2,
   .is-child-theme h3, .is-child-theme .h3,
   .is-child-theme h4, .is-child-theme .h4,
   .is-child-theme h5, .is-child-theme .h5,
   .is-child-theme h6, .is-child-theme .h6 {
-    font-size: "Queue", "Lato", "Roboto", "Helvetica", "Arial";
-    color: #000; }
+    font-family: "Queue", "Helvetica", "Arial";
+    color: #000;
+    font-weight: 600; }
     .is-child-theme h1 strong, .is-child-theme .h1 strong,
     .is-child-theme h2 strong, .is-child-theme .h2 strong,
     .is-child-theme h3 strong, .is-child-theme .h3 strong,
@@ -478,7 +608,8 @@ html.translated-ltr #site-header {
   .is-child-theme article h4, .is-child-theme article .h4,
   .is-child-theme article h5, .is-child-theme article .h5,
   .is-child-theme article h6, .is-child-theme article .h6 {
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: "Queue", "Helvetica", "Arial"; }
   .is-child-theme .lead {
     font-weight: bold; }
   .is-child-theme .box {
@@ -490,8 +621,7 @@ html.translated-ltr #site-header {
     .is-child-theme .box h4,
     .is-child-theme .box h5,
     .is-child-theme .box h6 {
-      font-weight: bold;
-      text-transform: uppercase; }
+      font-weight: bold; }
   .custom-color-green .is-child-theme .box.box-filled, .custom-color-green
   .is-child-theme .box.box-card {
     background-color: #329778; }
@@ -522,6 +652,9 @@ html.translated-ltr #site-header {
   .is-child-theme .box.box-card li,
   .is-child-theme .box.box-card a {
     color: #fff; }
+  .is-child-theme .box.box-filled .box-title,
+  .is-child-theme .box.box-card .box-title {
+    padding: 15px 15px 7px 15px !important; }
   .is-child-theme .box.box-filled .box-content,
   .is-child-theme .box.box-card .box-content {
     padding: 7px 15px 15px 15px;
@@ -564,8 +697,10 @@ html.translated-ltr #site-header {
     .is-child-theme .box-news:not(.box-news-horizontal) h1, .is-child-theme .box-news:not(.box-news-horizontal) h2, .is-child-theme .box-news:not(.box-news-horizontal) h3, .is-child-theme .box-news:not(.box-news-horizontal) h4, .is-child-theme .box-news:not(.box-news-horizontal) h5, .is-child-theme .box-news:not(.box-news-horizontal) h6 {
       margin: 0;
       padding: 0;
-      font-size: 1.3em;
-      color: #fff; }
+      font-size: 1.4em;
+      color: #fff;
+      font-family: "Queue", "Helvetica", "Arial";
+      font-weight: 400; }
     .is-child-theme .box-news:not(.box-news-horizontal) img {
       display: block;
       width: 100%;
@@ -712,13 +847,13 @@ html.translated-ltr #site-header {
         letter-spacing: 1px; }
       .is-child-theme .hero .search input[type="search"] {
         border: none; }
-    .is-child-theme .hero .text-block {
+    .is-child-theme .hero .text-block.text-block-center {
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-      font-family: "Queue", "Lato", "Roboto", "Helvetica", "Arial";
+      font-family: "Queue", "Helvetica", "Arial";
       text-align: center;
       right: auto;
       bottom: auto;
@@ -729,14 +864,14 @@ html.translated-ltr #site-header {
       z-index: 30;
       background-color: transparent !important;
       font-weight: 300;
-      /* Text shadows */
-      text-shadow: 0 0 3px rgba(0, 0, 0, 0.28);
       /* Mobile */ }
+      .is-child-theme .hero .text-block.text-block-center span {
+        text-shadow: none; }
       @media screen and (max-width: 767px) {
-        .is-child-theme .hero .text-block {
+        .is-child-theme .hero .text-block.text-block-center {
           font-size: 1.3em; } }
       @media screen and (max-width: 469px) {
-        .is-child-theme .hero .text-block {
+        .is-child-theme .hero .text-block.text-block-center {
           font-size: 1.1em; } }
     .is-child-theme .hero .stripe {
       display: none !important; }
@@ -1059,7 +1194,7 @@ html.translated-ltr #site-header {
   .is-child-theme .mod-herosection-title {
     display: block;
     color: #fff;
-    font-family: "Queue", "Lato", "Roboto", "Helvetica", "Arial";
+    font-family: "Queue", "Helvetica", "Arial";
     font-size: 2em;
     font-weight: bold; }
     @media (max-width: 767px) {
@@ -1602,9 +1737,9 @@ html.translated-ltr #site-header {
       border-top: 1px solid #eee; }
     .is-child-theme .nav-aside > li > a {
       padding: 5px 10px;
-      font-family: "Queue", "Lato", "Roboto", "Helvetica", "Arial";
+      font-family: "Queue", "Helvetica", "Arial";
       font-size: 1em;
-      font-weight: bold;
+      font-weight: 400;
       letter-spacing: .5px;
       -webkit-transition: background-color 200ms cubic-bezier(0.41, 0.405, 0.065, 0.99);
               transition: background-color 200ms cubic-bezier(0.41, 0.405, 0.065, 0.99);
