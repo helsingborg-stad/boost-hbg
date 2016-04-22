@@ -44,11 +44,12 @@
         }
 
         .footer-title {
+            font-family: $boost-font-family;
             font-size: 1.4em;
-            font-weight: bold;
+            font-weight: 300;
             color: #fff;
             display: block;
-            border-bottom: 3px solid #fff;
+            border-bottom: 2px solid #fff;
             padding-bottom: 0;
             margin-bottom: 15px;
             text-transform: uppercase;

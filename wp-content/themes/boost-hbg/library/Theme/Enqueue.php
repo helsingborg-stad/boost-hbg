@@ -41,7 +41,6 @@ class Enqueue
      */
     public function font()
     {
-        wp_enqueue_style('karbon-light', get_stylesheet_directory_uri(). '/assets/font/karbon/Karbon-Light.css', '', filemtime(get_stylesheet_directory() . '/assets/font/karbon/Karbon-Light.css'));
-        wp_enqueue_style('karbon-semibold', get_stylesheet_directory_uri(). '/assets/font/karbon/Karbon-Semibold.css', '', filemtime(get_stylesheet_directory() . '/assets/font/karbon/Karbon-Semibold.css'));
+        wp_enqueue_style('queue', get_stylesheet_directory_uri(). '/assets/font/queue/queue.css', '', filemtime(get_stylesheet_directory() . '/assets/font/queue/queue.css'));
     }
 }

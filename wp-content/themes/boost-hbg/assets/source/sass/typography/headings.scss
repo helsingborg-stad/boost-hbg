@@ -4,8 +4,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    font-size: $dunkers-font-family;
-    font-weight: 200;
+    font-size: $boost-font-family;
     color: $black;
 
     strong {
@@ -28,7 +27,7 @@ article {
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-    text-transform: uppercase;
+
 }
 
 

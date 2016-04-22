@@ -70,10 +70,11 @@
             font-size: 1em;
             line-height: 100%;
             color: #fff;
-
+            font-family: $boost-font-family;
             position: relative;
             transition: color 200ms, background 200ms;
             user-select: none;
+            text-rendering: geometricPrecision;
 
             &:not(.search-icon-btn):not(.translate-icon-btn) {
                 @media screen and (min-width: #{$screen-lg-max}) {
