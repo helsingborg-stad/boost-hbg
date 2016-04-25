@@ -588,14 +588,6 @@ html.translated-ltr #site-header {
     color: #FF5722; }
   .custom-color-cerise .is-child-theme main#main-content article blockquote:after, .custom-color-cerise .is-child-theme main#main-content article blockquote:before {
     color: #da487e; }
-  .is-child-theme .main-container > .grid:not(.breadcrumbs-wrapper):not(.no-margin-top):first-child:before {
-    content: "";
-    position: relative;
-    height: 60px;
-    display: block; }
-    @media screen and (max-width: 960px) {
-      .is-child-theme .main-container > .grid:not(.breadcrumbs-wrapper):not(.no-margin-top):first-child:before {
-        height: 20px; } }
   .is-child-theme h1, .is-child-theme .h1,
   .is-child-theme h2, .is-child-theme .h2,
   .is-child-theme h3, .is-child-theme .h3,
