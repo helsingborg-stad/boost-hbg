@@ -1,4 +1,5 @@
 main#main-content {
+
     article {
         blockquote {
             @if ($includeThemes == true) {
@@ -21,3 +22,16 @@ main#main-content {
         }
     }
 }
+
+
+.main-container > .grid:not(.breadcrumbs-wrapper):not(.no-margin-top):first-child:before {
+    content: "";
+    position: relative;
+    height: 60px;
+    display: block;
+
+    @media screen and (max-width: 960px) {
+        height: 20px;
+    }
+}
+
