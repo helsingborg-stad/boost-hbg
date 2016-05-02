@@ -482,15 +482,21 @@ html.translated-ltr #site-header {
               -webkit-transform: scaleX(1);
                       transform: scaleX(1); } }
       @media screen and (min-width: 1280px) {
-        .is-child-theme #main-menu li.current-menu-item a {
+        .is-child-theme #main-menu li.current-menu-item a,
+        .is-child-theme #main-menu li.current-page-ancestor a {
           text-decoration: none; }
-          .custom-color-green .is-child-theme #main-menu li.current-menu-item a {
+          .custom-color-green .is-child-theme #main-menu li.current-menu-item a, .custom-color-green
+          .is-child-theme #main-menu li.current-page-ancestor a {
             background-color: #2b8469; }
-          .custom-color-yellow .is-child-theme #main-menu li.current-menu-item a {
+          .custom-color-yellow .is-child-theme #main-menu li.current-menu-item a, .custom-color-yellow
+          .is-child-theme #main-menu li.current-page-ancestor a {
             background-color: #882100; }
-          .custom-color-cerise .is-child-theme #main-menu li.current-menu-item a {
+          .custom-color-cerise .is-child-theme #main-menu li.current-menu-item a, .custom-color-cerise
+          .is-child-theme #main-menu li.current-page-ancestor a {
             background-color: #721739; }
-          .is-child-theme #main-menu li.current-menu-item a:hover, .is-child-theme #main-menu li.current-menu-item a:focus {
+          .is-child-theme #main-menu li.current-menu-item a:hover, .is-child-theme #main-menu li.current-menu-item a:focus,
+          .is-child-theme #main-menu li.current-page-ancestor a:hover,
+          .is-child-theme #main-menu li.current-page-ancestor a:focus {
             cursor: default; } }
       .is-child-theme #main-menu li:last-child {
         padding-right: 0; }

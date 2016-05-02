@@ -129,7 +129,8 @@
 
         @media screen and (min-width: #{$screen-lg-max}) {
 
-            &.current-menu-item a {
+            &.current-menu-item a,
+            &.current-page-ancestor a {
 
                 // Color theme styles
                 @if ($includeThemes == true) {
