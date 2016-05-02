@@ -1800,9 +1800,9 @@ html.translated-ltr #site-header {
         .custom-color-cerise .is-child-theme .nav-aside .current.has-children > a::after, .custom-color-cerise
         .is-child-theme .nav-aside .current-node.has-children > a::after {
           color: #da487e; }
-      .is-child-theme .nav-aside .current a:before,
-      .is-child-theme .nav-aside .current-node a:before {
-        display: none; }
+      .is-child-theme .nav-aside .current a::before,
+      .is-child-theme .nav-aside .current-node a::before {
+        opacity: 1; }
     .is-child-theme .nav-aside .has-children > a::after,
     .is-child-theme .nav-aside .page_item_has_children > a::after {
       top: 12px;

@@ -68,8 +68,8 @@
             }
         }
 
-        a:before {
-            display: none;
+        a::before {
+            opacity: 1;
         }
     }
 
