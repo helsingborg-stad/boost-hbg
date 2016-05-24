@@ -397,7 +397,7 @@ html.translated-ltr #site-header {
     .is-child-theme .navbar.navbar-mainmenu .current_page_item a::after {
       display: none; }
   .is-child-theme .navbar-mainmenu {
-    display: table !important;
+    display: table;
     width: 100%;
     margin-top: 0; }
     @media screen and (max-width: 1280px) and (min-width: 959px) {
@@ -416,20 +416,17 @@ html.translated-ltr #site-header {
     .is-child-theme .navbar-mainmenu .nav {
       display: table-cell;
       vertical-align: middle;
-      text-align: right; }
+      text-align: right;
+      width: 100%; }
     .is-child-theme .navbar-mainmenu a, .is-child-theme .navbar-mainmenu i {
       color: #fff; }
   .is-child-theme .nav-horizontal > li + li {
     margin-left: 7px; }
   .is-child-theme .navbar .current-page-ancestor a {
     text-decoration: none; }
-  .is-child-theme .navbar-mainmenu {
-    display: table;
-    width: 100%; }
   .is-child-theme #main-menu {
     text-align: right;
-    font-size: 0;
-    width: 80%; }
+    font-size: 0; }
     .is-child-theme #main-menu li {
       display: inline-block;
       padding: 0;
