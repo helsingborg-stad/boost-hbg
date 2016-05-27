@@ -702,6 +702,12 @@ html.translated-ltr #site-header {
     border: none;
     margin-bottom: 30px;
     padding-top: 75%; }
+    .custom-color-green .is-child-theme .box-news:not(.box-news-horizontal) {
+      border-bottom: 4px solid #329778; }
+    .custom-color-yellow .is-child-theme .box-news:not(.box-news-horizontal) {
+      border-bottom: 4px solid #ee3900; }
+    .custom-color-cerise .is-child-theme .box-news:not(.box-news-horizontal) {
+      border-bottom: 4px solid #da487e; }
     .is-child-theme .box-news:not(.box-news-horizontal) h1, .is-child-theme .box-news:not(.box-news-horizontal) h2, .is-child-theme .box-news:not(.box-news-horizontal) h3, .is-child-theme .box-news:not(.box-news-horizontal) h4, .is-child-theme .box-news:not(.box-news-horizontal) h5, .is-child-theme .box-news:not(.box-news-horizontal) h6 {
       margin: 0;
       padding: 0;

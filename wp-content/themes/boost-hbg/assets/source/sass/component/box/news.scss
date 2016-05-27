@@ -8,6 +8,16 @@
     margin-bottom: 30px;
     padding-top: (300 / 400) * 100%;
 
+
+    @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+                border-bottom: 4px solid map-get($color, medium);
+            }
+        }
+    }
+
+
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
         padding: 0;
