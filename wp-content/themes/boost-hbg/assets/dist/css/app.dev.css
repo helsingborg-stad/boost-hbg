@@ -1926,8 +1926,8 @@ html.translated-ltr #site-header {
     @-webkit-keyframes fadeInUp {
       from {
         opacity: 0;
-        -webkit-transform: translateY(70%);
-                transform: translateY(70%); }
+        -webkit-transform: translateY(100px);
+                transform: translateY(100px); }
       to {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -1935,8 +1935,8 @@ html.translated-ltr #site-header {
     @keyframes fadeInUp {
       from {
         opacity: 0;
-        -webkit-transform: translateY(70%);
-                transform: translateY(70%); }
+        -webkit-transform: translateY(100px);
+                transform: translateY(100px); }
       to {
         opacity: 1;
         -webkit-transform: translateY(0);
