@@ -1930,8 +1930,8 @@ html.translated-ltr #site-header {
                 transform: translateY(100px); }
       to {
         opacity: 1;
-        -webkit-transform: translateY(0);
-                transform: translateY(0); } }
+        -webkit-transform: none !important;
+                transform: none !important; } }
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -1939,8 +1939,8 @@ html.translated-ltr #site-header {
                 transform: translateY(100px); }
       to {
         opacity: 1;
-        -webkit-transform: translateY(0);
-                transform: translateY(0); } }
+        -webkit-transform: none !important;
+                transform: none !important; } }
     .is-child-theme .fadeInUp {
       -webkit-animation-name: fadeInUp;
               animation-name: fadeInUp; } }
