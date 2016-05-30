@@ -1,4 +1,4 @@
-/*jQuery(function() {
+jQuery(function() {
 
     //Declarations
     var $window         = $(window),
@@ -31,7 +31,6 @@
     //Init function
     revealOnScroll();
 });
-*/
 
 var BoostHBG;
 
