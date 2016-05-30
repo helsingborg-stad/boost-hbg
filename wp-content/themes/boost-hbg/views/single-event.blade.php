@@ -15,7 +15,7 @@
 
 @if ($image)
 <div class="hero hidden-xs hidden-sm">
-    <div class="slider">
+    <div class="slider ratio-16-9">
         <ul>
             <li class="has-text-block">
                 <div class="slider-image" style="background-image:url('{{ $image }}');">
