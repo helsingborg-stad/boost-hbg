@@ -223,7 +223,40 @@ html.translated-ltr #site-header {
             animation-delay: 2100ms; }
 
 .is-child-theme {
-  /* Hidden directors */ }
+  /* Hidden directors */
+  /*
+
+@media screen and (min-width: 767px) {
+
+  //Hide to be animated elements
+  main [class^="modularity-mod-"] [class^="grid-"], .social-feed > li, .sidebar-footer-area > [class^="grid-"], .modularity-mod-table .box-panel, div:not(.hero) > .modularity-mod-slider .slider, .modularity-mod-inlaylist > .box-panel, .modularity-mod-iframe > iframe, .modularity-mod-contact > .box-card {
+    visibility: hidden;
+  }
+
+  .animated {
+    animation-duration: 700ms;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.410, 0.405, 0.065, 0.990);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 70%, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+
+}
+*/ }
   .is-child-theme #wrapper {
     position: relative;
     background: #fff; }
@@ -1913,37 +1946,6 @@ html.translated-ltr #site-header {
     background-color: #bb2d00; }
   .custom-color-cerise .is-child-theme .label-theme {
     background-color: #a92254; }
-  @media screen and (min-width: 767px) {
-    .is-child-theme main [class^="modularity-mod-"] [class^="grid-"], .is-child-theme .social-feed > li, .is-child-theme .sidebar-footer-area > [class^="grid-"], .is-child-theme .modularity-mod-table .box-panel, .is-child-theme div:not(.hero) > .modularity-mod-slider .slider, .is-child-theme .modularity-mod-inlaylist > .box-panel, .is-child-theme .modularity-mod-iframe > iframe, .is-child-theme .modularity-mod-contact > .box-card {
-      visibility: hidden; }
-    .is-child-theme .animated {
-      -webkit-animation-duration: 700ms;
-              animation-duration: 700ms;
-      -webkit-animation-fill-mode: both;
-              animation-fill-mode: both;
-      -webkit-animation-timing-function: cubic-bezier(0.41, 0.405, 0.065, 0.99);
-              animation-timing-function: cubic-bezier(0.41, 0.405, 0.065, 0.99); }
-    @-webkit-keyframes fadeInUp {
-      from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 70%, 0);
-                transform: translate3d(0, 70%, 0); }
-      to {
-        opacity: 1;
-        -webkit-transform: none;
-                transform: none; } }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 70%, 0);
-                transform: translate3d(0, 70%, 0); }
-      to {
-        opacity: 1;
-        -webkit-transform: none;
-                transform: none; } }
-    .is-child-theme .fadeInUp {
-      -webkit-animation-name: fadeInUp;
-              animation-name: fadeInUp; } }
   .is-child-theme .modularity-mod-inheritpost {
     margin-bottom: 30px; }
   .is-child-theme .mod-herosection {
