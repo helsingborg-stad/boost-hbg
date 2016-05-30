@@ -20,7 +20,7 @@
             <li class="has-text-block">
                 <div class="slider-image" style="background-image:url('{{ $image }}');">
                     <span class="text-block text-block-center">
-                        <span>
+                        <span style="font-size: 1.4em;">
                             <em class="title text-xl block-level">{{ the_title() }}</em>
                             {{ \Municipio\Helper\Dt::toStringFormat(strtotime(get_field('event-date-start'))) }}
                         </span>
