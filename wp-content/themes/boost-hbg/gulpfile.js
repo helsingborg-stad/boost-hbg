@@ -18,7 +18,8 @@ gulp.task('sass-dist', function() {
             .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
             .pipe(rename({suffix: '.min'}))
             .pipe(cssnano({
-                reduceTransforms: false
+                reduceTransforms: false,
+                reduceIdents: false
             }))
             .pipe(gulp.dest('assets/dist/css'));
 });
