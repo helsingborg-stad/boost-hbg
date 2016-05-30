@@ -1,4 +1,4 @@
-jQuery(function() {
+/*jQuery(function() {
 
     //Declarations
     var $window         = $(window),
@@ -31,3 +31,4 @@ jQuery(function() {
     //Init function
     revealOnScroll();
 });
+*/
