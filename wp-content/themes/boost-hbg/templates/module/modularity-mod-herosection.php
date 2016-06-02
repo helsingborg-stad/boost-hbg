@@ -15,7 +15,7 @@
                         </style>
                         <div class="mod-herosection-icon">
                             <div class="mod-herosection-icon-symbol" style="background-color:<?php echo $section['icon_background']; ?>">
-                                <?php echo \Municipio\Helper\Svg::extract($section['icon_svg']['url']); ?>
+                                <?php echo \Municipio\Helper\Svg::extract(get_attached_file($section['icon_svg']['ID'])); ?>
                             </div>
                         </div>
 
