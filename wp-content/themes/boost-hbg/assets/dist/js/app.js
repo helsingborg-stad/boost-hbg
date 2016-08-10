@@ -1,4 +1,4 @@
-jQuery(function() {
+$(function(jQuery) {
 
     //Declarations
     var $window         = $(window),
