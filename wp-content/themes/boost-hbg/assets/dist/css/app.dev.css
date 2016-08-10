@@ -390,11 +390,11 @@ html.translated-ltr #site-header {
   .is-child-theme.no-js #site-header .logotype:before {
     right: -170px;
     opacity: 1; }
-  .is-child-theme .navbar.navbar-mainmenu {
+  .is-child-theme .site-header.header-casual .navbar.navbar-mainmenu {
     background-color: transparent;
     padding: 15px 0; }
-    .is-child-theme .navbar.navbar-mainmenu .current-page-ancestor a::after,
-    .is-child-theme .navbar.navbar-mainmenu .current_page_item a::after {
+    .is-child-theme .site-header.header-casual .navbar.navbar-mainmenu .current-page-ancestor a::after,
+    .is-child-theme .site-header.header-casual .navbar.navbar-mainmenu .current_page_item a::after {
       display: none; }
   .is-child-theme .navbar-mainmenu {
     display: table;
