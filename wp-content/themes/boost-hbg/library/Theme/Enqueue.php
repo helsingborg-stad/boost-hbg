@@ -8,8 +8,8 @@ class Enqueue
     {
         // Enqueue scripts and styles
         add_action('wp_enqueue_scripts', array($this, 'style'));
-        add_action('wp_enqueue_scripts', array($this, 'script'));
         add_action('wp_enqueue_scripts', array($this, 'font'));
+        add_action('wp_enqueue_scripts', array($this, 'script'), 900);
     }
 
     /**
