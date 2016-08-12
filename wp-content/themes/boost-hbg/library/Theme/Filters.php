@@ -14,6 +14,18 @@ class Filters
 
         //Remove base-theme filters
         add_action('init', array($this, 'unregisterMunicipioImageFilter'));
+
+        //Body classes (removing material design, this is flat)
+        add_filter('body_class', array($this, 'wpAddBodyClass'));
+    }
+
+    public function wpAddBodyClass($classes)
+    {
+        if (is_array($classes)) {
+            $classes[] = "material-no-radius";
+            $classes[] = "material-no-shadow";
+        }
+        return $classes;
     }
 
     /**
