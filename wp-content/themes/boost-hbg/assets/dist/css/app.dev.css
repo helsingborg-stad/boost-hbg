@@ -1166,8 +1166,9 @@ html.translated-ltr #site-header {
   .is-child-theme .mod-herosection-table {
     display: table;
     table-layout: fixed;
-    height: 100%;
-    width: 100%; }
+    height: 100%; }
+    .is-child-theme .mod-herosection-table:not(.no-flexbox) {
+      width: 100%; }
     @media (max-width: 767px) {
       .is-child-theme .mod-herosection-table {
         display: block;
