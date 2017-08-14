@@ -12,9 +12,6 @@ class Filters
         add_action('Municipio/desktop_menu_breakpoint', array($this, 'desktopMenuBreakpoint'));
         add_action('Municipio/header_grid_size', array($this, 'headerGridSize'));
 
-        //Remove base-theme filters
-        add_action('init', array($this, 'unregisterMunicipioImageFilter'));
-
         //Body classes (removing material design, this is flat)
         add_filter('body_class', array($this, 'wpAddBodyClass'));
     }
@@ -26,15 +23,6 @@ class Filters
             $classes[] = "material-no-shadow";
         }
         return $classes;
-    }
-
-    /**
-     * Unregister built in image sizes. Use modularity
-     * @return void
-     */
-    public function unregisterMunicipioImageFilter()
-    {
-        \Municipio\Theme\ImageSizeFilter::removeFilter('Modularity/slider/image', 'filterHeroImageSize', 100);
     }
 
     /**
