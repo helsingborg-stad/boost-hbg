@@ -1,4 +1,6 @@
-.box {
+.box.box-news,
+.box.box-filled,
+.box.box-card {
     padding: 0;
     margin-bottom: 30px;
 
@@ -13,7 +15,8 @@
 }
 
 .box.box-filled,
-.box.box-card {
+.box.box-card,
+.box-news {
 
     // Color theme styles
     @if ($includeThemes == true) {
@@ -52,5 +55,10 @@
         -ms-backdrop-filter: blur(2px);
         -moz-backdrop-filter: blur(2px);
         -webkit-backdrop-filter: blur(2px);
+    }
+
+    .box-image-container {
+        position: absolute;
+        @include cover();
     }
 }
