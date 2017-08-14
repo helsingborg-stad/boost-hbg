@@ -16,7 +16,7 @@
 
 .box.box-filled,
 .box.box-card,
-.box-news {
+.box-news:not(.box-news-horizontal) {
 
     // Color theme styles
     @if ($includeThemes == true) {

@@ -101,7 +101,7 @@
         "wpackagist-plugin/stream": "^3.0.4",
         "wpackagist-plugin/wp-nested-pages": "^1.5.4",
         "wpackagist-plugin/autodescription": "2.7.0",
-        "wpackagist-plugin/mce-table-buttons": "^3.0.0",
+        "wpackagist-plugin/mce-table-buttons": "^3.0.0"
     },
 
     "extra": {
