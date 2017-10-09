@@ -14,7 +14,7 @@ RedirectMatch 301 /admin/(.*) /wp/wp-admin/$1
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f [NC]
+    RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*\.(js|css|png|jpe?g|gif|ico)) http://boosthbg.se/$1 [NC,P,L]
 </IfModule>
 
