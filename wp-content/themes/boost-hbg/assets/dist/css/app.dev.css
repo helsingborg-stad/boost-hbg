@@ -635,6 +635,9 @@ html.translated-ltr #site-header {
 .is-child-theme .lead {
   font-weight: bold; }
 
+.is-child-theme .modularity-mod-posts [data-equal-container] > [class*="grid-"] {
+  display: block; }
+
 .is-child-theme .box.box-news,
 .is-child-theme .box.box-filled,
 .is-child-theme .box.box-card {
