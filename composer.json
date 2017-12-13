@@ -10,68 +10,8 @@
     "minimum-stability" : "stable",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/Modularity.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/municipio.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/lix-calculator.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/xcap-import.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/custom-short-links.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/content-scheduler.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/force-ssl.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/better-post-UI.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/ACF-UX-collapse.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/force-ssl.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/acf-export-manager.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/custom-short-links.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/readspeaker-helper.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/content-scheduler.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/broken-link-detector.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/helsingborg-stad/lix-calculator.git"
+            "type":"composer",
+            "url":"https://packagist.org"
         },
         {
             "type":"composer",
