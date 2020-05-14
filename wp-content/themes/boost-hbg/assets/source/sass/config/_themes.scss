@@ -1,28 +1,25 @@
 $includeThemes: true;
 
 $themes: (
-    green: (
-        default: $green,
-        subtile: $green-subtile,
-        light: $green-light,
-        medium: $green-medium,
-        dark: $green-dark
-    ),
-
-    yellow: (
-        default: $yellow,
-        subtile: $yellow-subtile,
-        light: $yellow-light,
-        medium: $yellow-medium,
-        dark: $yellow-dark
-    ),
-
-    cerise: (
-        default: $pink,
-        subtile: $pink-subtile,
-        light: $pink-light,
-        medium: $pink-medium,
-        dark: $pink-dark
-    )
+  green: (
+    default: $green,
+    subtile: $green-subtile,
+    light: $green-light,
+    medium: $green-medium,
+    dark: $green-dark,
+  ),
+  yellow: (
+    default: $yellow,
+    subtile: $yellow-subtile,
+    light: $yellow-light,
+    medium: $yellow-medium,
+    dark: $yellow-dark,
+  ),
+  cerise: (
+    default: $pink,
+    subtile: $pink-subtile,
+    light: $pink-light,
+    medium: $pink-medium,
+    dark: $pink-dark,
+  ),
 );
-

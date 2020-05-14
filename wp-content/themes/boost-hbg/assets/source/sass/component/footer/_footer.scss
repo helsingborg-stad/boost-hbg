@@ -1,56 +1,56 @@
 .main-footer {
-    overflow: hidden;
+  overflow: hidden;
 
-    .container {
-        position: relative;
+  .container {
+    position: relative;
 
-        .grid {
-            position: relative;
-            z-index: 99;
-        }
-
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            z-index: 1;
-            top: -50%;
-            left: -50px;
-            height: 200%;
-            width: 75%;
-            background-color: rgba($green-dark, .5);
-            transform: rotate(-10deg);
-
-            // Color theme styles
-            @if ($includeThemes == true) {
-                @each $theme, $color in $themes {
-                    .custom-color-#{$theme} & {
-                        background-color: rgba(map-get($color, dark), .5);
-                    }
-                }
-            }
-        }
-
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            z-index: 1;
-            top: -50%;
-            right: -50px;
-            height: 200%;
-            width: 75%;
-            background-color: rgba($green-dark, .5);
-            transform: rotate(10deg);
-
-            // Color theme styles
-            @if ($includeThemes == true) {
-                @each $theme, $color in $themes {
-                    .custom-color-#{$theme} & {
-                        background-color: rgba(map-get($color, dark), .5);
-                    }
-                }
-            }
-        }
+    .grid {
+      position: relative;
+      z-index: 99;
     }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: -50%;
+      left: -50px;
+      height: 200%;
+      width: 75%;
+      // background-color: rgba($green-dark, 0.5);
+      transform: rotate(-10deg);
+
+      // Color theme styles
+      @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+          .custom-color-#{$theme} & {
+            background-color: rgba(map-get($color, dark), 0.5);
+          }
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: -50%;
+      right: -50px;
+      height: 200%;
+      width: 75%;
+      // background-color: rgba($green-dark, 0.5);
+      transform: rotate(10deg);
+
+      // Color theme styles
+      @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+          .custom-color-#{$theme} & {
+            background-color: rgba(map-get($color, dark), 0.5);
+          }
+        }
+      }
+    }
+  }
 }

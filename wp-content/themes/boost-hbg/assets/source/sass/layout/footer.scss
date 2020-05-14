@@ -1,107 +1,105 @@
+footer.main-footer {
+  margin-top: 0;
+  overflow: hidden;
 
-    footer.main-footer {
-        margin-top: 0;
-        overflow: hidden;
-
-        // Color theme styles
-        @if ($includeThemes == true) {
-            @each $theme, $color in $themes {
-                .custom-color-#{$theme} & {
-                    background-color: map-get($color, medium);
-                }
-            }
-        }
-
-        @media screen and (max-width: #{$screen-md-min}) {
-            .logotype {
-                display: none !important;
-            }
-
-        }
-
-        .logotype img,
-        .logotype svg {
-            height: 40px;
-            transform: rotate(0) scale(.9);
-            transform-origin: 20% 40%;
-            transition: 200ms all;
-
-            path.solid-form {
-                fill: #fff;
-            }
-
-            path {
-                stroke: #fff;
-            }
-
-            &:hover {
-                .solid-form {
-                    opacity: .7;
-                }
-
-                transform: rotate(-1deg) scale(1);
-            }
-        }
-
-        .footer-title {
-            font-family: $boost-font-family;
-            font-size: 1.4em;
-            font-weight: 300;
-            color: #fff;
-            display: block;
-            border-bottom: 2px solid #fff;
-            padding-bottom: 0;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
-
-        .box, [class^=widget_]:not(.widget_calendar) {
-            margin-bottom: 30px;
-        }
-
-        ul.icons-list {
-            text-align: right;
-
-            @media screen and (max-width: #{$screen-md-min}) {
-                text-align: center;
-            }
-
-            li {
-                padding: 0;
-            }
-
-            li a {
-                display: inline-block;
-                font-size: 2em;
-                position: relative;
-                text-align: center;
-                width: 50px;
-                height: 50px;
-
-                i.fa {
-                    position: relative;
-                    z-index: 2;
-                }
-
-                &::before {
-                    position: absolute;
-                    transform: scale(0);
-                    transform-origin: center center;
-                    width: 50px;
-                    height: 50px;
-                    left: 0;
-                    top: -20%;
-                    border-radius: 50%;
-                    background-color: #000;
-                    content: '';
-                    z-index: 0;
-                    transition: transform 300ms;
-                }
-
-                &:hover::before {
-                    transform: scale(1);
-                }
-            }
-        }
-
+  // Color theme styles
+  @if ($includeThemes == true) {
+    @each $theme, $color in $themes {
+      .custom-color-#{$theme} & {
+        background-color: map-get($color, medium);
+      }
     }
+  }
+
+  @media screen and (max-width: #{$screen-md-min}) {
+    .logotype {
+      display: none !important;
+    }
+  }
+
+  .logotype img,
+  .logotype svg {
+    height: 40px;
+    transform: rotate(0) scale(0.9);
+    transform-origin: 20% 40%;
+    transition: 200ms all;
+
+    path.solid-form {
+      fill: #fff;
+    }
+
+    path {
+      stroke: #fff;
+    }
+
+    &:hover {
+      .solid-form {
+        opacity: 0.7;
+      }
+
+      transform: rotate(-1deg) scale(1);
+    }
+  }
+
+  .footer-title {
+    font-family: $boost-font-family;
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #fff;
+    display: block;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .box,
+  [class^="widget_"]:not(.widget_calendar) {
+    margin-bottom: 30px;
+  }
+
+  ul.icons-list {
+    text-align: right;
+
+    @media screen and (max-width: #{$screen-md-min}) {
+      text-align: center;
+    }
+
+    li {
+      padding: 0;
+    }
+
+    li a {
+      display: inline-block;
+      font-size: 2em;
+      position: relative;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+
+      i.fa {
+        position: relative;
+        z-index: 2;
+      }
+
+      &::before {
+        position: absolute;
+        transform: scale(0);
+        transform-origin: center center;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: -20%;
+        border-radius: 50%;
+        background-color: #000;
+        content: "";
+        z-index: 0;
+        transition: transform 300ms;
+      }
+
+      &:hover::before {
+        transform: scale(1);
+      }
+    }
+  }
+}

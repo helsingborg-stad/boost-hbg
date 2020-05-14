@@ -1,100 +1,100 @@
 .modularity-mod-herosection {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
 }
 
 .mod-herosection,
 .mod-herosection .container {
-    height: 100%;
-    position: relative;
+  height: 100%;
+  position: relative;
 }
 
 .mod-herosection-table {
-    display: table;
-    table-layout: fixed;
-    height: 100%;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
 
-    &:not(.no-flexbox) {
-        width: 100%;
+  &:not(.no-flexbox) {
+    width: 100%;
+  }
+
+  @media #{$screen-below-md} {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  > section {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+
+    & + section {
+      margin-top: 10px;
     }
 
     @media #{$screen-below-md} {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: auto;
-        height: auto;
-        transform: translate(-50%, -50%);
+      display: block;
+      text-align: left;
     }
 
-    > section {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        white-space: nowrap;
+    a:hover {
+      text-decoration: none;
 
-        & + section {
-            margin-top: 10px;
-        }
-
-        @media #{$screen-below-md} {
-            display: block;
-            text-align: left;
-        }
-
-        a:hover {
-            text-decoration: none;
-
-            .mod-herosection-icon-symbol {
-                transform: scale(.8);
-            }
-        }
+      .mod-herosection-icon-symbol {
+        transform: scale(0.8);
+      }
     }
+  }
 }
 
 .mod-herosection-icon {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 
-    .mod-herosection-icon-symbol {
-        position: relative;
-        width: 10vw;
-        height: 10vw;
-        border-radius: 50%;
-        transition: transform 200ms;
+  .mod-herosection-icon-symbol {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    transition: transform 200ms;
 
-        @media #{$screen-below-md} {
-            width: 50px;
-            height: 50px;
-        }
-
-        svg {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60%;
-            height: auto;
-        }
+    @media #{$screen-below-md} {
+      width: 50px;
+      height: 50px;
     }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      height: auto;
+    }
+  }
 }
 
 .mod-herosection-title {
-    display: block;
-    color: #fff;
-    font-family: $boost-font-family;
-    font-size: 2em;
-    font-weight: bold;
+  display: block;
+  color: #fff;
+  font-family: $boost-font-family;
+  font-size: 2em;
+  font-weight: bold;
 
-    @media #{$screen-below-md} {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px;
-        font-size: 1.5em;
-    }
+  @media #{$screen-below-md} {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 1.5em;
+  }
 }

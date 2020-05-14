@@ -1,151 +1,146 @@
 .search-top {
-    position: relative;
-    z-index: 9999;
-    padding: 20px 0;
+  position: relative;
+  z-index: 9999;
+  padding: 20px 0;
 
-    form {
-        label {
-            display: none;
-        }
+  form {
+    label {
+      display: none;
     }
+  }
 }
 
 #site-header {
-    display: table;
-    position: fixed;
-    z-index: 200;
-    width: 100%;
-    padding-top: 0;
-    top: 0px;
-    left: 0;
-    transition: all 400ms cubic-bezier(0.410, 0.405, 0.065, 0.990);
-    font-family: $boost-font-family;
-    letter-spacing: .02em;
-    background-color: rgba(0,0,0,.4);
-    height: 80px;
-    text-rendering: geometricPrecision !important;
+  background-color: #000;
+  display: table;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  padding-top: 0;
+  top: 0;
+  left: 0;
+  transition: all 400ms cubic-bezier(0.41, 0.405, 0.065, 0.99);
+  font-family: $boost-font-family;
+  letter-spacing: 0.02em;
+  height: 80px;
+  text-rendering: geometricPrecision !important;
 
-    @media screen and (min-width: #{$screen-lg-min}) {
-        overflow: hidden;
-    }
+  @media screen and (min-width: #{$screen-lg-min}) {
+    overflow: hidden;
+  }
 
-    @media screen and (max-width: #{$screen-md-min}) {
-        height: 60px;
-    }
+  @media screen and (max-width: #{$screen-md-min}) {
+    height: 60px;
+  }
 
-    backdrop-filter: blur(2px);
-    -o-backdrop-filter: blur(2px);
-    -ms-backdrop-filter: blur(2px);
-    -moz-backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  -o-backdrop-filter: blur(2px);
+  -ms-backdrop-filter: blur(2px);
+  -moz-backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 
-    nav.navbar {
-        background-color: transparent;
-        transition: padding 200ms;
-    }
+  nav.navbar {
+    background-color: $yellow;
+  }
 
-    nav.navbar svg {
-        opacity: 1;
-        fill: #fff;
-    }
+  // nav.navbar svg {
+  //   opacity: 1;
+  //   fill: #fff;
+  // }
 
-    .logotype {
-        transition: opacity 300ms;
-        z-index: 800;
-        position: relative;
+  .logotype {
+    transition: opacity 300ms;
+    z-index: 800;
+    position: relative;
 
-        svg, img {
-            height: 50px;
-            @media screen and (max-width: #{$screen-md-min}) {
-                height: 30px;
-            }
+    svg,
+    img {
+      position: relative;
+      transform: rotate(0) scale(0.9);
+      transition: all 100ms;
+      height: 50px;
+      width: auto;
+      z-index: 100;
 
-            z-index: 100;
-            position: relative;
-            transform: rotate(0) scale(.9);
-            transition: all 100ms;
-            width: auto;
+      @media screen and (max-width: #{$screen-md-min}) {
+        height: 30px;
+      }
 
-            &:hover {
-                @media screen and (min-width: #{$screen-md-max}) {
-                    transform: rotate(-3deg) scale(1);
-                }
-            }
+      &:hover {
+        @media screen and (min-width: #{$screen-md-max}) {
+          transform: rotate(-3deg) scale(1);
         }
-
-        svg path {
-            stroke: #fff !important;
-            transition: fill 300ms, stroke 300ms;
-
-            &.solid-form {
-                fill: #fff !important;
-            }
-        }
-
-        &:before {
-            z-index: 99;
-            right: 200%;
-            transition: 500ms all cubic-bezier(0.410, 0.405, 0.065, 0.990);
-            content: "";
-            top: 0;
-
-            // Color theme styles
-            @if ($includeThemes == true) {
-                @each $theme, $color in $themes {
-                    .custom-color-#{$theme} & {
-                        background-color: map-get($color, default);
-                    }
-                }
-            }
-
-            display: block;
-            position: absolute;
-            transform: rotate(37deg) translate(-50%, -50%);
-            height: 1060px;
-            width: 1000px;
-            opacity: 0;
-        }
-
-        @media screen and (max-width: #{$screen-lg-min}) {
-            &:before {
-                display: none !important;
-            }
-        }
-
+      }
     }
 
+    svg path {
+      stroke: #fff !important;
+      transition: fill 300ms, stroke 300ms;
+
+      &.solid-form {
+        fill: #fff !important;
+      }
+    }
+
+    &:before {
+      z-index: 99;
+      right: 200%;
+      transition: 500ms all cubic-bezier(0.41, 0.405, 0.065, 0.99);
+      content: "";
+      top: 0;
+
+      // Color theme styles
+      @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+          .custom-color-#{$theme} & {
+            background-color: map-get($color, default);
+          }
+        }
+      }
+
+      display: block;
+      position: absolute;
+      transform: rotate(37deg) translate(-50%, -50%);
+      height: 1060px;
+      width: 1000px;
+      opacity: 0;
+    }
+
+    @media screen and (max-width: #{$screen-lg-min}) {
+      &:before {
+        display: none !important;
+      }
+    }
+  }
 }
 
 #site-header.liquid-header,
 &:not(.home) #site-header,
 &.menu-open #site-header,
 &.no-js #site-header {
-
-    // Color theme styles
-    @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-                background-color: rgba(map-get($color, dark),.9);
-            }
-        }
+  // Color theme styles
+  @if ($includeThemes == true) {
+    @each $theme, $color in $themes {
+      .custom-color-#{$theme} & {
+        background-color: rgba(map-get($color, dark), 0.9);
+      }
     }
+  }
 
-    .logotype {
-        &:before {
-            right: -170px;
-            opacity: 1;
-        }
+  .logotype {
+    &:before {
+      right: -170px;
+      opacity: 1;
     }
+  }
 }
 
 .site-header.header-casual .navbar.navbar-mainmenu {
-    background-color: transparent;
-    padding: 15px 0;
+  background-color: transparent;
+  padding: 15px 0;
 
-    .current-page-ancestor a::after,
-    .current_page_item a::after {
-        display: none;
-    }
+  .current-page-ancestor a::after,
+  .current_page_item a::after {
+    display: none;
+  }
 }
-
-

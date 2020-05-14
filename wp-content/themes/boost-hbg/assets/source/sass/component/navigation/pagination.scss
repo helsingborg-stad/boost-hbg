@@ -22,74 +22,74 @@
 
 .pagination,
 .page-numbers {
-    $page-size: 35px;
-    font-size: 0;
+  $page-size: 35px;
+  font-size: 0;
 
-    li {
-        display: inline-block;
+  li {
+    display: inline-block;
 
-        & + li {
-            margin-left: 5px;
+    & + li {
+      margin-left: 5px;
+    }
+  }
+
+  a,
+  .current {
+    display: block;
+
+    @if ($includeThemes == true) {
+      @each $theme, $color in $themes {
+        .custom-color-#{$theme} & {
+          border: 2px solid map-get($color, dark);
         }
+      }
     }
 
-    a,
-    .current {
-        display: block;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-align: center;
+    color: $black;
+    padding-left: 12px;
+    padding-right: 12px;
 
-        @if ($includeThemes == true) {
-            @each $theme, $color in $themes {
-                .custom-color-#{$theme} & {
-                    border: 2px solid map-get($color, dark);
-                }
-            }
+    height: $page-size;
+    line-height: $page-size - 3;
+
+    transition: 100ms all;
+
+    &:hover,
+    &:focus,
+    &.current {
+      color: #fff;
+      text-decoration: none;
+
+      @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+          .custom-color-#{$theme} & {
+            background-color: map-get($color, dark);
+            border-color: map-get($color, dark);
+          }
         }
-
-        font-size: .85em;
-        font-weight: bold;
-        text-align: center;
-        color: $black;
-        padding-left: 12px;
-        padding-right: 12px;
-
-        height: $page-size;
-        line-height: $page-size - 3;
-
-        transition: 100ms all;
-
-        &:hover,
-        &:focus,
-        &.current {
-            color: #fff;
-            text-decoration: none;
-
-            @if ($includeThemes == true) {
-                @each $theme, $color in $themes {
-                    .custom-color-#{$theme} & {
-                        background-color: map-get($color, dark);
-                        border-color: map-get($color, dark);
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 
-    a:not(.next):not(.prev) {
-        width: $page-size;
-        height: $page-size;
-        line-height: $page-size - 3;
-        padding: 0;
-    }
+  a:not(.next):not(.prev) {
+    width: $page-size;
+    height: $page-size;
+    line-height: $page-size - 3;
+    padding: 0;
+  }
 
-    .ellipsis {
-        &:after {
-            content: "…";
-            display: inline-block;
-        }
+  .ellipsis {
+    &:after {
+      content: "…";
+      display: inline-block;
     }
+  }
 
-    .dots {
-        display: block;
-        font-size: .85em;
-    }
+  .dots {
+    display: block;
+    font-size: 0.85em;
+  }
 }
