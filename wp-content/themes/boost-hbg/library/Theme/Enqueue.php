@@ -2,6 +2,8 @@
 
 namespace BoostHBG\Theme;
 
+use BoostHBG\Helper\CacheBust as CacheBust;
+
 class Enqueue
 {
     public function __construct()
@@ -18,7 +20,14 @@ class Enqueue
      */
     public function style()
     {
-        wp_enqueue_style('boost-css', get_stylesheet_directory_uri(). '/assets/dist/css/app.min.css', '', filemtime(get_stylesheet_directory() . '/assets/dist/css/app.min.css'));
+        wp_enqueue_style(
+            'boost-css',
+            get_stylesheet_directory_uri() .
+                '/assets/dist/' .
+                CacheBust::name('css/app.css'),
+            array(),
+            '',
+        );
     }
 
     /**
@@ -27,7 +36,14 @@ class Enqueue
      */
     public function script()
     {
-        wp_enqueue_script('boost-js', get_stylesheet_directory_uri(). '/assets/dist/js/app.min.js', '', filemtime(get_stylesheet_directory() . '/assets/dist/js/app.min.js'), true);
+        wp_enqueue_script(
+            'boost-js',
+            get_stylesheet_directory_uri() .
+                '/assets/dist/' .
+                CacheBust::name('js/app.js'),
+            array(),
+            '',
+        );
     }
 
     /**
@@ -36,6 +52,13 @@ class Enqueue
      */
     public function font()
     {
-        wp_enqueue_style('queue', get_stylesheet_directory_uri(). '/assets/font/queue/queue.css', '', filemtime(get_stylesheet_directory() . '/assets/font/queue/queue.css'));
+        wp_enqueue_style(
+            'queue',
+            get_stylesheet_directory_uri() .
+                '/assets/font/' .
+                CacheBust::name('queue/queue.css'),
+            array(),
+            '',
+        );
     }
 }
