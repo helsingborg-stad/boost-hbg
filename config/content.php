@@ -3,8 +3,8 @@
 /**
 * Tell WordPress to load from local wp-content, and not vendor wp.
 */
-define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
-define('WP_CONTENT_URL', 'https://boosthbg.se/wp-content');
+define('WP_CONTENT_DIR', dirname(__DIR__) . '/wp-content');
+define('WP_CONTENT_URL', 'http://' . @$_SERVER['HTTP_HOST'] . '/wp-content');
 
 /**
  * Use municipio as default theme.
