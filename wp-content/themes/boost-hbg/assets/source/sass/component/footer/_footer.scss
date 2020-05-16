@@ -1,6 +1,14 @@
 .main-footer {
   overflow: hidden;
 
+  .widget_text,
+  .widget_search {
+    form {
+      font-size: inherit;
+      padding: 0;
+    }
+  }
+
   .container {
     position: relative;
 
