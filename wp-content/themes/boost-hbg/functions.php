@@ -7,7 +7,7 @@ define('BOOST_PATH', __DIR__);
 
 //Include vendor files
 if (file_exists(dirname(ABSPATH) . '/vendor/autoload.php')) {
-    require_once dirname(ABSPATH) . '/vendor/autoload.php';
+  require_once dirname(ABSPATH) . '/vendor/autoload.php';
 }
 
 require_once BOOST_PATH . '/library/Vendor/Psr4ClassLoader.php';
