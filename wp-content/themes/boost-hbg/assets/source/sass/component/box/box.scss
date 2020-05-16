@@ -1,68 +1,69 @@
 .modularity-mod-posts [data-equal-container] > [class*="grid-"] {
-    display: block;
+  display: block;
 }
 
 .box.box-news,
 .box.box-filled,
 .box.box-card {
-    padding: 0;
-    margin-bottom: 30px;
+  padding: 0;
+  margin-bottom: 30px;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-weight: bold;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
 }
 
 .box.box-filled,
 .box.box-card,
 .box-news:not(.box-news-horizontal) {
-
-    // Color theme styles
-    @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-                background-color: map-get($color, medium);
-            }
-        }
+  // Color theme styles
+  @if ($includeThemes == true) {
+    @each $theme, $color in $themes {
+      .custom-color-#{$theme} & {
+        background-color: map-get($color, dark);
+      }
     }
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: #fff;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+  }
 
-    .link-item-light {
-        color: #fff;
-    }
+  .link-item-light {
+    color: $white;
+  }
 
-    p, li, a {
-        color: #fff;
-    }
+  p,
+  li,
+  a {
+    color: #000;
+  }
 
-    .box-title {
-        padding: 15px 15px 7px 15px !important;
-    }
+  .box-title {
+    padding: 15px 15px 7px 15px !important;
+  }
 
-    .box-content {
-        padding: 7px 15px 15px 15px;
-        backdrop-filter: blur(2px);
-        -o-backdrop-filter: blur(2px);
-        -ms-backdrop-filter: blur(2px);
-        -moz-backdrop-filter: blur(2px);
-        -webkit-backdrop-filter: blur(2px);
-    }
+  .box-content {
+    padding: 7px 15px 15px 15px;
+    backdrop-filter: blur(2px);
+    -o-backdrop-filter: blur(2px);
+    -ms-backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
 
-    .box-image-container {
-        position: absolute;
-        @include cover();
-    }
+  .box-image-container {
+    position: absolute;
+    @include cover();
+  }
 }

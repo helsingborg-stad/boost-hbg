@@ -1,45 +1,44 @@
-
-    .box-panel {
-        .box-title {
-            // Color theme styles
-            @if ($includeThemes == true) {
-                @each $theme, $color in $themes {
-                    .custom-color-#{$theme} & {
-                        border-bottom-color: map-get($color, default);
-                    }
-                }
-            }
-            color: #000;
-
-            &:empty {
-                padding: 0 !important;
-            }
+.box-panel {
+  .box-title {
+    // Color theme styles
+    @if ($includeThemes == true) {
+      @each $theme, $color in $themes {
+        .custom-color-#{$theme} & {
+          border-bottom-color: map-get($color, default);
         }
-
-        ul {
-            li {
-
-                a, a .link-item:before {
-                    // Color theme styles
-                    @if ($includeThemes == true) {
-                        @each $theme, $color in $themes {
-                            .custom-color-#{$theme} & {
-                                color: map-get($color, dark);
-                            }
-                        }
-                    }
-                }
-
-                time {
-                    // Color theme styles
-                    @if ($includeThemes == true) {
-                        @each $theme, $color in $themes {
-                            .custom-color-#{$theme} & {
-                                color: map-get($color, medium);
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+    color: #000;
+
+    &:empty {
+      padding: 0 !important;
+    }
+  }
+
+  ul {
+    li {
+      a,
+      a .link-item:before {
+        // Color theme styles
+        @if ($includeThemes == true) {
+          @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+              color: map-get($color, default);
+            }
+          }
+        }
+      }
+
+      time {
+        // Color theme styles
+        @if ($includeThemes == true) {
+          @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+              color: map-get($color, default);
+            }
+          }
+        }
+      }
+    }
+  }
+}

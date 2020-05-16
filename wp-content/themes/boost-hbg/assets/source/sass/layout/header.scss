@@ -108,11 +108,11 @@
     //   opacity: 0;
     // }
 
-    // @media screen and (max-width: #{$screen-lg-min}) {
-    //   &:before {
-    //     display: none !important;
-    //   }
-    // }
+    @media screen and (max-width: #{$screen-lg-min}) {
+      &:before {
+        display: none !important;
+      }
+    }
   }
 }
 
@@ -124,7 +124,7 @@
   @if ($includeThemes == true) {
     @each $theme, $color in $themes {
       .custom-color-#{$theme} & {
-        background-color: rgba(map-get($color, dark), 0.9);
+        background-color: map-get($color, dark);
       }
     }
   }

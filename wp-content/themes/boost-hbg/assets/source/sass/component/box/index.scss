@@ -1,35 +1,40 @@
 .box-index {
-    margin-bottom: 30px;
-    // Color theme styles
-    @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-                background: map-get($color, subtile);
-            }
-        }
+  margin-bottom: 30px;
+  // Color theme styles
+  @if ($includeThemes == true) {
+    @each $theme, $color in $themes {
+      .custom-color-#{$theme} & {
+        background: map-get($color, default);
+      }
     }
-    border: none;
+  }
+  border: none;
 
-    .box-content {
-        padding: 25px;
+  .box-content {
+    padding: 25px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    line-height: 130%;
+    left: 0;
+
+    &:before {
+      display: none;
     }
+  }
 
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 1.2em;
-        margin-bottom: 5px;
-        line-height: 130%;
-        left: 0;
+  p {
+    font-size: 0.9em;
+  }
 
-        &:before {
-            display: none;
-        }
-    }
-
-    p {
-        font-size: .9em;
-    }
-
-    &:focus {
-        text-decoration: none;
-    }
+  &:focus {
+    text-decoration: none;
+  }
 }

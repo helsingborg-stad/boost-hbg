@@ -1,175 +1,169 @@
 .box-event {
-    $animation-speed: 300ms;
-    $lead-height: 70%;
+  $animation-speed: 300ms;
+  $lead-height: 70%;
 
-    position: relative;
+  position: relative;
+  display: block;
+  height: 400px;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  @if ($includeThemes == true) {
+    @each $theme, $color in $themes {
+      .custom-color-#{$theme} & {
+        background-color: map-get($color, default);
+      }
+    }
+  }
+
+  .box-image {
+    position: absolute;
     display: block;
-    height: 400px;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
     overflow: hidden;
-    margin-bottom: 30px;
+    transition: $animation-speed all ease-in-out;
 
-    @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-                background-color: map-get($color, default);
-            }
-        }
+    img {
+      display: none;
     }
 
-    .box-image {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center center;
-        overflow: hidden;
-        transition: $animation-speed all ease-in-out;
+    &:before {
+      content: "";
+      transition: $animation-speed all ease-in-out;
+      position: absolute;
+      left: -50px;
+      right: -50px;
+      bottom: -100px;
+      transform: rotate(5deg);
+      height: 220px;
 
-        img {
-            display: none;
+      @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+          .custom-color-#{$theme} & {
+            background-color: rgba(map-get($color, default), 0.9);
+          }
         }
+      }
+    }
 
-        &:before {
-            content: "";
-            transition: $animation-speed all ease-in-out;
-            position: absolute;
-            left: -50px;
-            right: -50px;
-            bottom: -100px;
-            transform: rotate(5deg);
-            height: 220px;
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      content: "";
 
-            @if ($includeThemes == true) {
-                @each $theme, $color in $themes {
-                    .custom-color-#{$theme} & {
-                        background-color: rgba(map-get($color, medium),.9);
-                    }
-                }
-            }
+      // Color theme styles
+      @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+          .custom-color-#{$theme} & {
+            background-color: rgba(map-get($color, default), 0.1);
+          }
         }
+      }
+    }
+  }
 
-        &::after {
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            content: '';
+  .event-information {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
-            // Color theme styles
-            @if ($includeThemes == true) {
-                @each $theme, $color in $themes {
-                    .custom-color-#{$theme} & {
-                        background-color: rgba(map-get($color, default),.1);
-                    }
-                }
-            }
+    padding: 15px 20px;
+    transition: $animation-speed all ease-in-out;
+  }
 
+  .event-title {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: none;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+
+  .event-date-start {
+    padding: 2px 5px;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: #fff;
+    color: $black;
+  }
+
+  .event-lead {
+    opacity: 0;
+    padding: 0 20px 0 20px;
+    transition: $animation-speed all ease-in-out;
+    font-size: 0.9em;
+    color: #fff;
+    height: $lead-height;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      content: "";
+    }
+  }
+
+  .event-action {
+    opacity: 0;
+    transition: 300ms opacity ease-in-out, 100ms background-color;
+    border: 3px solid #fff;
+    padding: 10px 18px;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    @include center();
+    font-weight: 300;
+  }
+
+  &:hover {
+    .box-image:before {
+      height: 800px;
+
+      backdrop-filter: blur(2px);
+      -o-backdrop-filter: blur(2px);
+      -ms-backdrop-filter: blur(2px);
+      -moz-backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+
+      @if ($includeThemes == true) {
+        @each $theme, $color in $themes {
+          .custom-color-#{$theme} & {
+            background-color: rgba(map-get($color, default), 0.9);
+          }
         }
+      }
     }
 
     .event-information {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-        padding: 15px 20px;
-        transition: $animation-speed all ease-in-out;
-    }
-
-    .event-title {
-        font-weight: bold;
-        color: #fff;
-        font-size: 1.5rem;
-        text-transform: none;
-        margin-bottom: 0px;
-        margin-top: 5px;
-    }
-
-    .event-date-start {
-        padding: 2px 5px;
-        font-size: 1rem;
-        line-height: 1;
-        background-color: #fff;
-        color: $black;
+      transform: translateY($lead-height);
+      opacity: 0;
     }
 
     .event-lead {
-        opacity: 0;
-        padding: 0 20px 0 20px;
-        transition: $animation-speed all ease-in-out;
-        font-size: .9em;
-        color: #fff;
-        height: $lead-height;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        transform: translateY(100%);
-
-        &::after {
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            content: '';
-
-        }
+      opacity: 0;
     }
 
     .event-action {
-        opacity: 0;
-        transition: 300ms opacity ease-in-out,
-                    100ms background-color;
-        border: 3px solid #fff;
-        padding: 10px 18px;
-        background-color: transparent;
-        color: #fff;
-        text-transform: uppercase;
-        @include center();
-        font-weight: 300;
+      display: block;
+      opacity: 1;
     }
-
-    &:hover {
-        .box-image:before {
-            height: 800px;
-
-            backdrop-filter: blur(2px);
-            -o-backdrop-filter: blur(2px);
-            -ms-backdrop-filter: blur(2px);
-            -moz-backdrop-filter: blur(2px);
-            -webkit-backdrop-filter: blur(2px);
-
-             @if ($includeThemes == true) {
-                @each $theme, $color in $themes {
-                    .custom-color-#{$theme} & {
-                        background-color: rgba(map-get($color, dark),.9);
-                    }
-                }
-            }
-        }
-
-        .event-information {
-            transform: translateY($lead-height);
-            opacity: 0;
-        }
-
-        .event-lead {
-            opacity: 0;
-        }
-
-        .event-action {
-            display: block;
-            opacity: 1;
-        }
-    }
-
+  }
 }
-
-

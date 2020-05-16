@@ -29,12 +29,12 @@ html.translated-ltr #site-header {
   top: 39px;
 }
 
-.animated {
-  animation-duration: 700ms;
+// .animated {
+//   animation-duration: 700ms;
 
-  @for $item from 1 through 40 {
-    &:nth-child(#{$item}) {
-      animation-delay: #{100 + $item * 50}ms;
-    }
-  }
-}
+//   @for $item from 1 through 40 {
+//     &:nth-child(#{$item}) {
+//       animation-delay: #{100 + $item * 50}ms;
+//     }
+//   }
+// }

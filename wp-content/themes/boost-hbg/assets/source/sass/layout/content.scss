@@ -4,7 +4,7 @@ main#main-content {
       @if ($includeThemes == true) {
         @each $theme, $color in $themes {
           .custom-color-#{$theme} & {
-            border-color: map-get($color, subtile);
+            border-color: map-get($color, default);
           }
         }
       }

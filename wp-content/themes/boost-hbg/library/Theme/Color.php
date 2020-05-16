@@ -86,9 +86,6 @@ class Color
      */
     public function addBodyClass($output, $doctype = "")
     {
-
-
-
         //Get color scheme
         if (is_numeric(get_the_id())) {
             $ancestor_posts = get_post_ancestors(get_the_id());
@@ -104,7 +101,7 @@ class Color
         if (isset($color) && !is_null($color) && !empty($color)) {
             $output = $output . ' class="custom-color-'.$color.'"';
         } else {
-            $output = $output . ' class="custom-color-green"';
+            $output = $output . ' class="custom-color-yellow"';
         }
 
         return $output;

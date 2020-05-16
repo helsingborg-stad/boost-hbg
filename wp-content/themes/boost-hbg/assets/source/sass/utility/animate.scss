@@ -1,16 +1,20 @@
-
-
 @media screen and (min-width: #{$screen-md-min}) {
-
   //Hide to be animated elements
-  main [class^="modularity-mod-"] [class^="grid-"], .social-feed > li, .sidebar-footer-area > [class^="grid-"], .modularity-mod-table .box-panel, div:not(.hero) > .modularity-mod-slider .slider, .modularity-mod-inlaylist > .box-panel, .modularity-mod-iframe > iframe, .modularity-mod-contact > .box-card {
+  main [class^="modularity-mod-"] [class^="grid-"],
+  .social-feed > li,
+  .sidebar-footer-area > [class^="grid-"],
+  .modularity-mod-table .box-panel,
+  div:not(.hero) > .modularity-mod-slider .slider,
+  .modularity-mod-inlaylist > .box-panel,
+  .modularity-mod-iframe > iframe,
+  .modularity-mod-contact > .box-card {
     visibility: hidden;
   }
 
   .animated {
     animation-duration: 700ms;
     animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0.410, 0.405, 0.065, 0.990);
+    animation-timing-function: cubic-bezier(0.41, 0.405, 0.065, 0.99);
   }
 
   @keyframes fadeInUp {
@@ -28,5 +32,4 @@
   .fadeInUp {
     animation-name: fadeInUp;
   }
-
 }
