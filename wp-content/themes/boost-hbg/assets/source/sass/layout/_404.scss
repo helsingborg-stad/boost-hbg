@@ -1,7 +1,7 @@
 .is-child-theme.error404 {
-  #wrapper {
-    background-color: $green;
-  }
+  // #wrapper {
+  //   background-color: $green;
+  // }
 
   .overflow-hidden {
     overflow: hidden;
@@ -55,8 +55,8 @@
   h2,
   div.detailed {
     position: relative;
-    background-color: $green-medium;
-    color: #fff !important;
+    background-color: $yellow;
+    color: $black;
     padding: 60px 40px;
 
     line-height: 1;
@@ -88,8 +88,12 @@
   .actions,
   .detailed {
     margin-top: 30px;
+  }
+
+  .actions {
+    margin-bottom: 30px;
     a {
-      color: #fff;
+      color: $black;
     }
   }
 }

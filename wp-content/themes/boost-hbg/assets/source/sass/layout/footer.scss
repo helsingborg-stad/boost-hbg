@@ -3,12 +3,8 @@ footer.main-footer {
   overflow: hidden;
 
   // Color theme styles
-  @if ($includeThemes == true) {
-    @each $theme, $color in $themes {
-      .custom-color-#{$theme} & {
-        background-color: map-get($color, dark);
-      }
-    }
+  .custom-color-yellow & {
+    background-color: $black;
   }
 
   @media screen and (max-width: #{$screen-md-min}) {
@@ -42,15 +38,15 @@ footer.main-footer {
   }
 
   .footer-title {
+    border-bottom: 1px solid $yellow;
+    color: $text-color-on-dark-bg;
+    display: block;
     font-family: $boost-font-family;
     font-size: 1.4em;
     font-weight: 300;
-    color: #fff;
-    display: block;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 0;
-    margin-bottom: 15px;
     text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .box,
@@ -58,48 +54,48 @@ footer.main-footer {
     margin-bottom: 30px;
   }
 
-  ul.icons-list {
-    text-align: right;
+  // ul.icons-list {
+  //   text-align: right;
 
-    @media screen and (max-width: #{$screen-md-min}) {
-      text-align: center;
-    }
+  //   @media screen and (max-width: #{$screen-md-min}) {
+  //     text-align: center;
+  //   }
 
-    li {
-      padding: 0;
-    }
+  //   li {
+  //     padding: 0;
+  //   }
 
-    li a {
-      display: inline-block;
-      font-size: 2em;
-      position: relative;
-      text-align: center;
-      width: 50px;
-      height: 50px;
+  //   li a {
+  //     display: inline-block;
+  //     font-size: 2em;
+  //     position: relative;
+  //     text-align: center;
+  //     width: 50px;
+  //     height: 50px;
 
-      i.fa {
-        position: relative;
-        z-index: 2;
-      }
+  //     i.fa {
+  //       position: relative;
+  //       z-index: 2;
+  //     }
 
-      &::before {
-        position: absolute;
-        transform: scale(0);
-        transform-origin: center center;
-        width: 50px;
-        height: 50px;
-        left: 0;
-        top: -20%;
-        border-radius: 50%;
-        background-color: #000;
-        content: "";
-        z-index: 0;
-        transition: transform 300ms;
-      }
+  //     &::before {
+  //       content: "";
+  //       background-color: #000;
+  //       border-radius: 50%;
+  //       width: 50px;
+  //       height: 50px;
+  //       position: absolute;
+  //       left: 0;
+  //       top: -20%;
+  //       z-index: 0;
+  //       transform: scale(0);
+  //       transform-origin: center center;
+  //       transition: transform 300ms;
+  //     }
 
-      &:hover::before {
-        transform: scale(1);
-      }
-    }
-  }
+  //     &:hover::before {
+  //       transform: scale(1);
+  //     }
+  //   }
+  // }
 }
