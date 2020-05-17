@@ -5,7 +5,7 @@
 .box.box-news,
 .box.box-filled,
 .box.box-card {
-  padding: 0;
+  padding: 5px 10px;
   margin-bottom: 30px;
 
   h1,
@@ -35,18 +35,12 @@
   h3,
   h4,
   h5,
-  h6 {
-    color: #000;
-  }
-
-  .link-item-light {
-    color: $white;
-  }
-
+  h6,
   p,
   li,
-  a {
-    color: #000;
+  a,
+  .link-item-light {
+    color: $text-color-on-dark-bg;
   }
 
   .box-title {
@@ -55,11 +49,11 @@
 
   .box-content {
     padding: 7px 15px 15px 15px;
-    backdrop-filter: blur(2px);
-    -o-backdrop-filter: blur(2px);
-    -ms-backdrop-filter: blur(2px);
-    -moz-backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    // backdrop-filter: blur(2px);
+    // -o-backdrop-filter: blur(2px);
+    // -ms-backdrop-filter: blur(2px);
+    // -moz-backdrop-filter: blur(2px);
+    // -webkit-backdrop-filter: blur(2px);
   }
 
   .box-image-container {
