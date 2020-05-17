@@ -15,50 +15,20 @@
     .grid {
       position: relative;
       z-index: 99;
+
+
+      .btn.btn-primary {
+        // Color theme styles
+        @if ($includeThemes == true) {
+          @each $theme, $color in $themes {
+            .custom-color-#{$theme} & {
+              background-color: map-get($color, default);
+              color: $text-color-on-light-bg;
+            }
+          }
+        }
+        border: none;
+      }
     }
-
-    // FX bars
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   position: absolute;
-    //   z-index: 1;
-    //   top: -50%;
-    //   left: -50px;
-    //   height: 200%;
-    //   width: 75%;
-    //   transform: rotate(-10deg);
-
-    //   // Color theme styles
-    //   @if ($includeThemes == true) {
-    //     @each $theme, $color in $themes {
-    //       .custom-color-#{$theme} & {
-    //         background-color: map-get($color, default);
-    //       }
-    //     }
-    //   }
-    // }
-
-    // FX bars
-    // &::after {
-    //   content: "";
-    //   display: block;
-    //   position: absolute;
-    //   z-index: 1;
-    //   top: -50%;
-    //   right: -50px;
-    //   height: 200%;
-    //   width: 75%;
-    //   transform: rotate(10deg);
-
-    //   // Color theme styles
-    //   @if ($includeThemes == true) {
-    //     @each $theme, $color in $themes {
-    //       .custom-color-#{$theme} & {
-    //         background-color: map-get($color, default);
-    //       }
-    //     }
-    //   }
-    // }
   }
 }
