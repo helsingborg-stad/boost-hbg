@@ -14,6 +14,7 @@ class App
 
         // Enable SVG in sliders
         add_filter('acf/load_field/key=field_56a5ed2f398dc', [$this, 'addSvgSupport']);
+        add_filter('acf/load_field/key=field_570f4e9b10c26', [$this, 'addSvgSupport']);
     }
 
     public function addSvgSupport($field)
