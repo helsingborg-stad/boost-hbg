@@ -42,7 +42,7 @@
     @if ($includeThemes == true) {
       @each $theme, $color in $themes {
         .custom-color-#{$theme} & {
-          border-bottom: 2px solid rgba(map-get($color, default), 0.2);
+          border-bottom: 2px solid map-get($color, default);
         }
       }
     }
