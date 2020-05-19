@@ -50,9 +50,9 @@
 }
 
 .nav-mobile-menu {
-  @include cover();
-  top: 60px;
-  position: fixed;
+  // @include cover();
+  // top: 60px;
+  // position: fixed;
   z-index: 99;
   text-align: center;
   overflow: auto;
@@ -65,9 +65,9 @@
   -moz-backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 
-  @media screen and (min-width: #{$screen-md-min}) {
-    top: 80px;
-  }
+  // @media screen and (min-width: #{$screen-md-min}) {
+  //   top: 80px;
+  // }
 
   &.open {
     opacity: 1;
@@ -187,7 +187,7 @@
     @if ($includeThemes == true) {
       @each $theme, $color in $themes {
         .custom-color-#{$theme} & {
-          background-color: map-get($color, dark) !important;
+          background-color: map-get($color, default) !important;
         }
       }
     }
@@ -201,7 +201,7 @@
     @if ($includeThemes == true) {
       @each $theme, $color in $themes {
         .custom-color-#{$theme} & {
-          background-color: map-get($color, dark) !important;
+          background-color: map-get($color, default) !important;
         }
       }
     }
