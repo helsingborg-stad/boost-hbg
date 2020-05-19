@@ -10,6 +10,13 @@
   .slider {
     background-color: #fff;
     max-height: 100vh;
+
+    .slider-image {
+      @media screen and #{$screen-md-up} {
+        background-position-y: 110px;
+      }
+    }
+
     .player a {
       z-index: 10 !important;
       text-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
@@ -87,14 +94,24 @@
         text-shadow: none;
       }
 
-      // @media screen and #{$screen-below-md} {
-      //   font-size: 1.3em;
-      // }
+      // iPad
+      @media screen and #{$screen-below-lg} {
+        font-size: 1.3em;
+        top: 55%;
+        left: 50%;
+        height: 400px;
+        width: 400px;
+      }
 
       // Mobile
-      // @media screen and #{$screen-below-sm} {
-      //   font-size: 1.1em;
-      // }
+      @media screen and #{$screen-below-sm} {
+        font-size: 1.1em;
+        left: 50%;
+        right: 50%;
+        top: 65%;
+        width: 210px;
+        height: 210px;
+      }
     }
   }
 
