@@ -98,4 +98,19 @@ footer.main-footer {
       }
     }
   }
+
+  .company-logos {
+    .logo {
+      display: block;
+      max-width: 15%;
+      margin-top: -25px;
+    }
+    @media screen and (max-width: #{$screen-md-min}) {
+      margin-bottom: 40px;
+      .logo {
+        margin: 0 auto;
+        max-width: 25%;
+      }
+    }
+  }
 }

@@ -35,14 +35,14 @@
 
 &.home {
   #main-content section.creamy-border-bottom.creamy {
-    // Color theme styles
-    @if ($includeThemes == true) {
-      @each $theme, $color in $themes {
-        .custom-color-#{$theme} & {
-          border-bottom: 2px solid map-get($color, default);
-        }
-      }
-    }
+    // // Color theme styles
+    // @if ($includeThemes == true) {
+    //   @each $theme, $color in $themes {
+    //     .custom-color-#{$theme} & {
+    //       border-bottom: 2px solid map-get($color, default);
+    //     }
+    //   }
+    // }
 
     padding-bottom: 20px;
   }
