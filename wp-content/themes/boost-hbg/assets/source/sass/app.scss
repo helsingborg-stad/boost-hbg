@@ -29,6 +29,16 @@
     padding-right: 0;
   }
 
+  .grid[class*="sidebar-"] {
+    padding: 0;
+    margin: 0;
+
+    .grid-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   @import "layout/base";
   @import "layout/typography";
   @import "layout/header";
@@ -56,6 +66,7 @@
   @import "component/navigation/pagination";
   @import "component/navigation/aside";
   @import "component/navigation/mobile";
+  @import "component/navigation/accessability";
 
   @import "component/button/button";
 
