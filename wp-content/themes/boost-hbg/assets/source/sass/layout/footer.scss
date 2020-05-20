@@ -1,11 +1,7 @@
 footer.main-footer {
   margin-top: 0;
   overflow: hidden;
-
-  // Color theme styles
-  .custom-color-yellow & {
-    background-color: $black;
-  }
+  background-color: $black;
 
   @media screen and (max-width: #{$screen-md-min}) {
     .logotype {
@@ -43,7 +39,7 @@ footer.main-footer {
     display: block;
     font-family: $boost-font-family;
     font-size: 1.4em;
-    font-weight: 300;
+    font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 15px;
     margin-bottom: 15px;
@@ -72,6 +68,7 @@ footer.main-footer {
       text-align: center;
       width: 50px;
       height: 50px;
+      color: $white;
 
       i.fa {
         position: relative;
@@ -91,6 +88,10 @@ footer.main-footer {
         transform: scale(0);
         transform-origin: center center;
         transition: transform 300ms;
+      }
+
+      &:hover {
+        color: $black;
       }
 
       &:hover::before {

@@ -2,6 +2,10 @@
   display: block;
 }
 
+.box.box-border {
+  border: 4px solid $black;
+}
+
 .box.box-news,
 .box.box-filled,
 .box.box-card {

@@ -11,18 +11,13 @@
 }
 
 #site-header {
-  // background-color: #000;
   display: table;
   position: fixed;
   z-index: 200;
   width: 100%;
   padding-top: 0;
-  top: 0;
-  left: 0;
-  transition: all 400ms cubic-bezier(0.41, 0.405, 0.065, 0.99);
   font-family: $boost-font-family;
   letter-spacing: 0.02em;
-  height: 80px;
   text-rendering: geometricPrecision !important;
 
   @media screen and (min-width: #{$screen-lg-min}) {
@@ -33,25 +28,27 @@
     height: 60px;
   }
 
-  backdrop-filter: blur(2px);
-  -o-backdrop-filter: blur(2px);
-  -ms-backdrop-filter: blur(2px);
-  -moz-backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-
   nav.navbar {
     background-color: $yellow;
   }
 
-  // nav.navbar svg {
-  //   opacity: 1;
-  //   fill: #fff;
-  // }
+  // Header logo
+  .site-header.header-casual {
+    background-color: $black;
+
+    .menu-trigger .menu-icon {
+      background-color: $black;
+      &::after,
+      &::before {
+        background-color: $black;
+      }
+    }
+  }
 
   .logotype {
-    // transition: opacity 300ms;
     z-index: 800;
     position: relative;
+    padding: 18px 0;
 
     svg,
     img {
@@ -74,40 +71,6 @@
       }
     }
 
-    // svg path {
-    //   stroke: #fff !important;
-    //   transition: fill 300ms, stroke 300ms;
-
-    //   &.solid-form {
-    //     fill: #fff !important;
-    //   }
-    // }
-
-    // FX ribbon
-    // &:before {
-    //   content: "";
-    //   right: 200%;
-    //   transition: 500ms all cubic-bezier(0.41, 0.405, 0.065, 0.99);
-    //   top: 0;
-    //   z-index: 99;
-
-    //   // Color theme styles
-    //   @if ($includeThemes == true) {
-    //     @each $theme, $color in $themes {
-    //       .custom-color-#{$theme} & {
-    //         background-color: map-get($color, default);
-    //       }
-    //     }
-    //   }
-
-    //   display: block;
-    //   position: absolute;
-    //   transform: rotate(37deg) translate(-50%, -50%);
-    //   height: 1060px;
-    //   width: 1000px;
-    //   opacity: 0;
-    // }
-
     @media screen and (max-width: #{$screen-lg-min}) {
       &:before {
         display: none !important;
@@ -120,21 +83,7 @@
 &:not(.home) #site-header,
 &.menu-open #site-header,
 &.no-js #site-header {
-  // Color theme styles
-  @if ($includeThemes == true) {
-    @each $theme, $color in $themes {
-      .custom-color-#{$theme} & {
-        background-color: map-get($color, dark);
-      }
-    }
-  }
-
-  .logotype {
-    &:before {
-      right: -170px;
-      opacity: 1;
-    }
-  }
+  background-color: $black; 
 }
 
 .site-header.header-casual .navbar.navbar-mainmenu {

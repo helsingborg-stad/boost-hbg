@@ -7,22 +7,9 @@
 }
 
 .comment .comment-text {
-  // Color theme styles
-  @if ($includeThemes == true) {
-    @each $theme, $color in $themes {
-      .custom-color-#{$theme} & {
-        background-color: map-get($color, dark);
-      }
-    }
-  }
+  color: $black;
 }
 
 .comment .comment-text:before {
-  @if ($includeThemes == true) {
-    @each $theme, $color in $themes {
-      .custom-color-#{$theme} & {
-        border-bottom-color: map-get($color, dark);
-      }
-    }
-  }
+  color: $black;
 }

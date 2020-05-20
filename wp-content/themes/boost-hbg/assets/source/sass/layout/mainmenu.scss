@@ -1,21 +1,10 @@
 .navbar-mainmenu {
-  // display: table;
-  // width: 100%;
   margin-top: 0;
 
   @media screen and (max-width: #{$screen-lg-max}) and (min-width: #{$screen-lg-min}) {
     text-align: center;
     display: block;
   }
-
-  // .logotype {
-  //   display: table-cell !important;
-  //   vertical-align: middle;
-  //   line-height: 1;
-  //   img {
-  //     max-height: 30px;
-  //   }
-  // }
 
   .menu-trigger {
     display: table-cell;
@@ -36,6 +25,7 @@
 
 .nav-horizontal > li + li {
   margin-left: 7px;
+  background: $black;
 }
 
 .navbar .current-page-ancestor a {
@@ -111,15 +101,8 @@
           text-decoration: none;
 
           &:not(.search-icon-btn):not(.translate-icon-btn) {
-            // Color theme styles
-            @if ($includeThemes == true) {
-              @each $theme, $color in $themes {
-                .custom-color-#{$theme} & {
-                  background-color: map-get($color, dark);
-                  color: $text-color-on-dark-bg;
-                }
-              }
-            }
+            background-color: $black;
+            color: $text-color-on-dark-bg;
           }
 
           &:not(.search-icon-btn):not(.translate-icon-btn)::before {
@@ -133,14 +116,7 @@
     @media screen and (min-width: #{$screen-lg-max}) {
       &.current-menu-item a,
       &.current-page-ancestor a {
-        // Color theme styles
-        @if ($includeThemes == true) {
-          @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-              background-color: map-get($color, default);
-            }
-          }
-        }
+        background-color: $yellow;
 
         text-decoration: none;
 
