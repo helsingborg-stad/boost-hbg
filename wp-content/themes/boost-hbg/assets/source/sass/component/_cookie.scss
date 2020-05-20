@@ -1,5 +1,6 @@
-.cookie-consent.notice.info {
+#cookie-consent.notice.info {
   background-color: $black;
+  border-top: 4px solid $yellow;
 
   i, p {
     color: $white;
