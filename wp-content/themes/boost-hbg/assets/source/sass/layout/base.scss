@@ -35,16 +35,10 @@
 
 &.home {
   #main-content section.creamy-border-bottom.creamy {
-    // // Color theme styles
-    // @if ($includeThemes == true) {
-    //   @each $theme, $color in $themes {
-    //     .custom-color-#{$theme} & {
-    //       border-bottom: 2px solid map-get($color, default);
-    //     }
-    //   }
-    // }
-
-    padding-bottom: 20px;
+    background-color: lighten(desaturate($yellow, 10%), 42%);
+    padding: 60px 0;
+    border-top: 4px solid $black;
+    border-bottom: 4px solid $black;
   }
 }
 

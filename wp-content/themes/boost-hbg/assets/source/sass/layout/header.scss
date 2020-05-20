@@ -19,6 +19,7 @@
   font-family: $boost-font-family;
   letter-spacing: 0.02em;
   text-rendering: geometricPrecision !important;
+  background: $black;
 
   @media screen and (min-width: #{$screen-lg-min}) {
     overflow: hidden;
@@ -33,15 +34,19 @@
   }
 
   // Header logo
-  .site-header.header-casual {
+  &.site-header.header-casual {
     background-color: $black;
 
     .menu-trigger .menu-icon {
-      background-color: $black;
+      background-color: $black ;
       &::after,
       &::before {
         background-color: $black;
       }
+    }
+
+    .menu-trigger.open .menu-icon {
+      background: none;
     }
   }
 

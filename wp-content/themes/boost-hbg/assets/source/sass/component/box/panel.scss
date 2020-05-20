@@ -1,43 +1,28 @@
-.box-panel {
+.box-panel.box-panel-primary, 
+.box-panel.box-panel-secondary {
   .box-title {
-    // Color theme styles
-    @if ($includeThemes == true) {
-      @each $theme, $color in $themes {
-        .custom-color-#{$theme} & {
-          border-bottom-color: map-get($color, default);
-        }
-      }
-    }
+    border-color: $black;
     color: #000;
 
     &:empty {
       padding: 0 !important;
     }
   }
+  .box-content {
+    border:none;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   ul {
     li {
       a,
       a .link-item:before {
-        // Color theme styles
-        @if ($includeThemes == true) {
-          @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-              color: map-get($color, default);
-            }
-          }
-        }
+        color: $black;
       }
 
       time {
-        // Color theme styles
-        @if ($includeThemes == true) {
-          @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-              color: map-get($color, default);
-            }
-          }
-        }
+        color: $black;
       }
     }
   }

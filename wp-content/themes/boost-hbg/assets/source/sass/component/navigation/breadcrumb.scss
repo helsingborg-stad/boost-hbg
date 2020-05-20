@@ -1,0 +1,17 @@
+ol.breadcrumbs {
+  font-size: 1em;
+  a,
+  span,
+  li:not(:last-child)::after {
+    color: $black; 
+    font-size: 1em;
+  }
+
+  a > span {
+    font-weight: bold;
+  }
+
+  li:not(:last-child)::after {
+    content: "|"; 
+  }
+}

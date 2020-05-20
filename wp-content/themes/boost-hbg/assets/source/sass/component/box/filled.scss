@@ -1,0 +1,17 @@
+.sidebar-right-sidebar .box.box-filled,
+.box.box-filled {
+  background-color: $white;
+  border: 4px solid $black;
+
+  .box-title {
+    color: $black
+  }
+
+  .box-content p,
+  .box-content a,
+  .box-content li,
+  .box-content label,
+  .box-content span {
+    color: $black;
+  }
+}

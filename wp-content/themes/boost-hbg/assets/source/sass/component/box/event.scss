@@ -8,14 +8,7 @@
   padding: 0;
   overflow: hidden;
   margin-bottom: 30px;
-
-  @if ($includeThemes == true) {
-    @each $theme, $color in $themes {
-      .custom-color-#{$theme} & {
-        background-color: map-get($color, default);
-      }
-    }
-  }
+  background: $black;
 
   .box-image {
     position: absolute;
@@ -40,14 +33,7 @@
       bottom: -100px;
       transform: rotate(5deg);
       height: 220px;
-
-      @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-          .custom-color-#{$theme} & {
-            background-color: rgba(map-get($color, default), 0.9);
-          }
-        }
-      }
+      background-color: $yellow;
     }
 
     &::after {
@@ -58,15 +44,6 @@
       right: 0;
       height: 100%;
       content: "";
-
-      // Color theme styles
-      @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-          .custom-color-#{$theme} & {
-            background-color: rgba(map-get($color, default), 0.1);
-          }
-        }
-      }
     }
   }
 
@@ -82,7 +59,7 @@
 
   .event-title {
     font-weight: bold;
-    color: #fff;
+    color: $black;
     font-size: 1.5rem;
     text-transform: none;
     margin-bottom: 0px;
@@ -90,10 +67,9 @@
   }
 
   .event-date-start {
-    padding: 2px 5px;
+    padding: 0;
     font-size: 1rem;
     line-height: 1;
-    background-color: #fff;
     color: $black;
   }
 
@@ -124,13 +100,13 @@
   .event-action {
     opacity: 0;
     transition: 300ms opacity ease-in-out, 100ms background-color;
-    border: 3px solid #fff;
-    padding: 10px 18px;
+    border: 4px solid $black;
+    padding: 20px 36px;
     background-color: transparent;
-    color: #fff;
+    color: $black;
     text-transform: uppercase;
     @include center();
-    font-weight: 300;
+    font-weight: bold;
   }
 
   &:hover {
@@ -143,13 +119,7 @@
       -moz-backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(2px);
 
-      @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-          .custom-color-#{$theme} & {
-            background-color: rgba(map-get($color, default), 0.9);
-          }
-        }
-      }
+      $background-color: $yellow;
     }
 
     .event-information {

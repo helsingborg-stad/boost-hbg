@@ -1,14 +1,13 @@
 .box-index {
   margin-bottom: 30px;
-  // Color theme styles
-  @if ($includeThemes == true) {
-    @each $theme, $color in $themes {
-      .custom-color-#{$theme} & {
-        background: map-get($color, default);
-      }
-    }
+  border: 4px solid $yellow;
+  background: $yellow;
+  transition: 200ms all;
+
+  &:hover {
+    border-color: $black;
+    background-color: $yellow;
   }
-  border: none;
 
   .box-content {
     padding: 25px;
@@ -24,14 +23,12 @@
     margin-bottom: 5px;
     line-height: 130%;
     left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
 
     &:before {
       display: none;
     }
-  }
-
-  p {
-    font-size: 0.9em;
   }
 
   &:focus {

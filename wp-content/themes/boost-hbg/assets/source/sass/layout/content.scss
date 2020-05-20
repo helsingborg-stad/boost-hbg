@@ -1,24 +1,9 @@
 main#main-content {
   article {
     blockquote {
-      @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-          .custom-color-#{$theme} & {
-            border-color: map-get($color, default);
-          }
-        }
-      }
-
-      &:after,
-      &:before {
-        @if ($includeThemes == true) {
-          @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-              color: map-get($color, default);
-            }
-          }
-        }
-      }
+      padding: 40px;
+      border-color: $black;
+      background: $yellow;
     }
   }
 }

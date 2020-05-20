@@ -1,7 +1,9 @@
 .is-child-theme.error404 {
-  // #wrapper {
-  //   background-color: $green;
-  // }
+  background-color: $black;
+
+  #wrapper {
+    background-color: $black;
+  }
 
   .overflow-hidden {
     overflow: hidden;
@@ -14,8 +16,9 @@
   .logotype {
     max-width: 350px;
     width: 100%;
-    margin: 0 auto;
-
+    margin: 40px auto;
+    display: block;
+    
     svg,
     img {
       z-index: 100;
@@ -95,5 +98,9 @@
     a {
       color: $black;
     }
+  }
+
+  .detailed .btn {
+    margin-top: 40px;;
   }
 }
