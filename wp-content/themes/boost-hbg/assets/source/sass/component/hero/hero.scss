@@ -85,7 +85,7 @@
 
       // iPad
       @media screen and #{$screen-below-lg} {
-        font-size: 0.7em;
+        font-size: 0.8em;
         top: 55%;
         left: 50%;
         height: 400px;
@@ -94,7 +94,7 @@
 
       // Mobile
       @media screen and #{$screen-below-sm} {
-        font-size: 0.6em;
+        font-size: 0.8em;
         left: 50%;
         right: 50%;
         top: 65%;
