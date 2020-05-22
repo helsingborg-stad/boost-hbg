@@ -61,7 +61,7 @@
 
     .text-block.text-block-center {
       @include center();
-      background-color: $yellow;
+      background-color: $yellow !important;
       background-image: none;
       border-radius: 50%;
       color: $black;
@@ -85,7 +85,7 @@
 
       // iPad
       @media screen and #{$screen-below-lg} {
-        font-size: 1.3em;
+        font-size: 0.7em;
         top: 55%;
         left: 50%;
         height: 400px;
@@ -94,7 +94,7 @@
 
       // Mobile
       @media screen and #{$screen-below-sm} {
-        font-size: 1.1em;
+        font-size: 0.6em;
         left: 50%;
         right: 50%;
         top: 65%;
