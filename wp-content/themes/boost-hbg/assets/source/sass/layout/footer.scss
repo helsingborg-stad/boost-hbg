@@ -5,6 +5,18 @@ footer.main-footer {
   border-top: none;
   box-shadow: none;
 
+
+  .sidebar-footer-area {
+
+    @media screen and (max-width: #{$screen-lg-min}) {
+      div[class*="grid-"] + div[class*="grid-"] {
+        margin-top: 40px;
+      }
+    }
+
+  }
+  
+
   .widget_text,
   .widget_search {
     form {
