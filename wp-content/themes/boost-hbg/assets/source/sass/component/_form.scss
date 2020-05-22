@@ -28,6 +28,7 @@ form {
   input:not([type="checkbox"]):not([type="radio"]), textarea, select, button {
     border-color: $yellow;
     background-color: $black;
+    color: $white;
 
     &::placeholder {
       color: $yellow;
