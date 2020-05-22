@@ -45,6 +45,7 @@
   @import "layout/mainmenu";
   @import "layout/footer";
   @import "layout/content";
+  @import "layout/search";
 
   @import "typography/headings";
 
@@ -62,6 +63,7 @@
   @import "component/gallery/image-gallery";
   @import "component/share";
   @import "component/cookie";
+  @import "component/form";
 
   @import "component/navigation/breadcrumb";
   @import "component/navigation/pagination";
@@ -77,6 +79,6 @@
   @import "utility/forms";
   @import "utility/label";
 
-  @import "modularity/inheritpost";
+  @import "modularity/inheritpost"; 
   @import "modularity/herosection";
 }

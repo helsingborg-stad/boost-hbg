@@ -6,7 +6,7 @@
 &:not(.home) {
   #wrapper {
     #main-content {
-      padding-top: 160px;
+      padding-top: 155px;
     }
     @media screen and (min-width: #{$screen-lg-max}) {
       #main-content {
@@ -34,8 +34,7 @@
 }
 
 &.home {
-  #main-content section.creamy-border-bottom.creamy {
-    background-color: lighten(desaturate($yellow, 10%), 42%);
+  #main-content section.-border-bottom.creamy {
     padding: 60px 0;
     border-top: 4px solid $black;
     border-bottom: 4px solid $black;
