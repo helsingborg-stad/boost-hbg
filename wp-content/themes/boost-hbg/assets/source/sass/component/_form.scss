@@ -27,6 +27,7 @@ form {
 .nav-mobile-menu form {
   input:not([type="checkbox"]):not([type="radio"]), textarea, select, button {
     border-color: $yellow;
+    background-color: $black;
 
     &::placeholder {
       color: $yellow;
