@@ -23,15 +23,7 @@
     }
 
     [class*="slider-nav-"] {
-      // transition: background 200ms;
-      // Color theme styles
-      @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-          .custom-color-#{$theme} & {
-            background: map-get($color, default);
-          }
-        }
-      }
+      background-color: $yellow; 
       border-radius: 0;
       text-indent: -500px;
       overflow: hidden;
@@ -63,25 +55,18 @@
       }
 
       &:hover {
-        // Color theme styles
-        @if ($includeThemes == true) {
-          @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-              background-color: map-get($color, dark);
-            }
-          }
-        }
+        background-color: $black;
       }
     }
 
     .text-block.text-block-center {
       @include center();
-      background-color: $yellow !important;
+      background-color: $yellow;
       background-image: none;
       border-radius: 50%;
       color: $black;
       font-family: $boost-font-family;
-      font-size: 1.2em;
+      font-size: .8em;
       text-align: center;
       letter-spacing: 0.01em;
       left: 27vw;
@@ -92,6 +77,10 @@
 
       span {
         text-shadow: none;
+      }
+
+      em.title {
+        font-size: 2em;
       }
 
       // iPad
