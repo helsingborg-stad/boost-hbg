@@ -52,11 +52,11 @@ class Enqueue
      */
     public function font()
     {
+
         wp_enqueue_style(
             'queue',
             get_stylesheet_directory_uri() .
-                '/assets/font/' .
-                CacheBust::name('queue/queue.css'),
+                '/assets/dist/css/font.css',
             array(),
             '',
         );

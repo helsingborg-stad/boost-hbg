@@ -25,7 +25,7 @@ module.exports = {
   entry: {
     'js/app': './assets/source/js/app.js',
     'css/app': './assets/source/sass/app.scss',
-    // 'css/admin': './assets/source/sass/admin.scss'
+    'css/font': './assets/font/queue/queue.css'
   },
   /**
    * Output settings
