@@ -19,6 +19,7 @@
       <div class="grid">
         <div class="grid-md-6 grid-sm-12 company-logos">
           <img class="logo" src="{!! get_stylesheet_directory_uri() . '/assets/images/rs_white.png' !!}" alt="">
+          <img class="logo" src="{!! get_stylesheet_directory_uri() . '/assets/images/hbg_white.png' !!}" alt="">
         </div>
         @if (have_rows('footer_icons_repeater', 'option'))
           <div class="grid-md-6 grid-sm-12 social-icon-list">
