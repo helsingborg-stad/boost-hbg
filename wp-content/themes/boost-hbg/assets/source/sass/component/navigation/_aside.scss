@@ -23,7 +23,8 @@
   }
 
   .current,
-  .current-node {
+  .current-node,
+  .current-menu-item {
     background-color: $yellow;
     &.has-children > a::after {
       @include hbg-icon("\f107");

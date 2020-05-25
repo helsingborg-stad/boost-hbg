@@ -1,18 +1,4 @@
 {
   "css/app.css": "css/app.css",
-  "css/font.css": "css/font.css",
-  "js/app.js": "js/app.js",
-  "fonts/queue-bold.eot": "fonts/queue-bold.eot",
-  "fonts/queue-bold.ttf": "fonts/queue-bold.ttf",
-  "fonts/queue-bold.woff": "fonts/queue-bold.woff",
-  "fonts/queue-bold.woff2": "fonts/queue-bold.woff2",
-  "fonts/queue-book.eot": "fonts/queue-book.eot",
-  "fonts/queue-book.ttf": "fonts/queue-book.ttf",
-  "fonts/queue-book.woff": "fonts/queue-book.woff",
-  "fonts/queue-book.woff2": "fonts/queue-book.woff2",
-  "fonts/queue-bookitalic.eot": "fonts/queue-bookitalic.eot",
-  "fonts/queue-bookitalic.ttf": "fonts/queue-bookitalic.ttf",
-  "fonts/queue-bookitalic.woff": "fonts/queue-bookitalic.woff",
-  "fonts/queue-bookitalic.woff2": "fonts/queue-bookitalic.woff2",
-  "images/queue.css": "images/queue-bookitalic.svg"
+  "js/app.js": "js/app.js"
 }
