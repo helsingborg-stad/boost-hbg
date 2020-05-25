@@ -19,6 +19,11 @@ footer.main-footer {
     padding: 0;
   }
   
+  .widget-text.grid-lg-4 {
+    padding-left: 15px; 
+    padding-right: 15px;
+  }
+  
   .widget_text:not(.grid-lg-4),
   .widget_search:not(.grid-lg-4),
   .WP_Editor_Widget:not(.grid-lg-4),
