@@ -28,6 +28,13 @@ require_once 'config/update.php';
 require_once 'config/upload.php';
 
 /**
+ * AD configuration
+ */
+if (file_exists(__DIR__ . '/config/ad.php')) {
+    require_once 'config/ad.php';
+}
+
+/**
  * SSL configuration
  */
 if (file_exists(__DIR__ . '/config/ssl.php')) {
