@@ -22,7 +22,7 @@
 
 
 .box-news.box-news-horizontal {
-
+  padding: 0; 
   border: none;
   background: none;
 
@@ -36,9 +36,12 @@
     left: 0;
     border-bottom: 4px solid $black;
 
-    &:before,
-    .link-item {
-      display:  none
+    &:before {
+      display: none; 
     }
+  }
+
+  .link-item:before {
+    display: none; 
   }
 }
