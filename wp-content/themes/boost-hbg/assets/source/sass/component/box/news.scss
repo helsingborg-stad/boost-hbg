@@ -19,3 +19,26 @@
     }
   }
 }
+
+
+.box-news.box-news-horizontal {
+
+  border: none;
+  background: none;
+
+  .box-content {
+    color: $black; 
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $black; 
+    padding: 0;
+    left: 0;
+    border-bottom: 4px solid $black;
+
+    &:before,
+    .link-item {
+      display:  none
+    }
+  }
+}
