@@ -15,10 +15,14 @@ footer.main-footer {
     }
 
   }
+  .textwidget.custom-html-widget {
+    padding: 0;
+  }
   
   .widget_text,
   .widget_search,
-  .WP_Editor_Widget {
+  .WP_Editor_Widget,
+  .widget_custom_html {
     color: $white;
     form {
       font-size: inherit;
