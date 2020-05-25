@@ -25,7 +25,9 @@ footer.main-footer {
       padding: 0;
 
       input[type="search"]::placeholder,
-      input[type="text"]::placeholder {
+      input[type="text"]::placeholder,
+      input[type="email"]::placeholder,
+      input[type="date"]::placeholder {
         color: $white;
       }
     }
