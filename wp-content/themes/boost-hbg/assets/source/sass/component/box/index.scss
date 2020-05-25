@@ -1,35 +1,37 @@
 .box-index {
-    margin-bottom: 30px;
-    // Color theme styles
-    @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-                background: map-get($color, subtile);
-            }
-        }
-    }
-    border: none;
+  margin-bottom: 30px;
+  border: 4px solid $black;
+  background: $yellow;
+  transition: 200ms all;
 
-    .box-content {
-        padding: 25px;
-    }
+  &:hover {
+    border-color: $black;
+    background-color: $yellow;
+  }
 
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 1.2em;
-        margin-bottom: 5px;
-        line-height: 130%;
-        left: 0;
+  .box-content {
+    padding: 25px;
+  }
 
-        &:before {
-            display: none;
-        }
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    line-height: 130%;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
 
-    p {
-        font-size: .9em;
+    &:before {
+      display: none;
     }
+  }
 
-    &:focus {
-        text-decoration: none;
-    }
+  &:focus {
+    text-decoration: none;
+  }
 }

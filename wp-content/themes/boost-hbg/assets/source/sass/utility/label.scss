@@ -1,9 +1,3 @@
 .label-theme {
-    @if ($includeThemes == true) {
-        @each $theme, $color in $themes {
-            .custom-color-#{$theme} & {
-                background-color: map-get($color, dark);
-            }
-        }
-    }
+  background-color: $black;
 }

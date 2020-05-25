@@ -1,0 +1,31 @@
+&.search-results .main-content {
+
+  .creamy {
+    border-bottom: 4px solid $black;
+  }
+
+  .search-result-list {
+
+    > li + li {
+      margin-top: 40px;
+    }
+
+    .search-result-item {
+      border: 4px solid $black;
+      max-width: initial;
+      padding: 20px;
+    }
+
+    h3 a {
+      text-transform: uppercase;
+      color: $black;
+      left: 0;
+
+      &:before {
+        display:  none; 
+      }
+    }
+
+  }
+
+}

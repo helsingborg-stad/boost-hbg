@@ -1,0 +1,38 @@
+
+form {
+  input:not([type="checkbox"]):not([type="radio"]), textarea, select, button {
+    border: 4px solid $black;
+    box-shadow: none;
+    font-family: $boost-font-family;
+
+    &[type="submit"] {
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    &::placeholder {
+      color: $black;
+    }
+  }
+  
+  .input-group-addon-btn input.btn.btn-primary {
+    border-left: none;
+  }
+
+
+}
+
+.main-footer form,
+.nav-mobile-menu form {
+  input:not([type="checkbox"]):not([type="radio"]), textarea, select, button {
+    border-color: $yellow;
+    background-color: $black;
+    color: $white;
+
+    &::placeholder {
+      color: $yellow;
+    }
+    
+  }
+}

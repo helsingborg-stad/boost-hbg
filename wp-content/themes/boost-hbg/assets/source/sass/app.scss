@@ -1,55 +1,85 @@
-@import 'config/colors';
-@import 'config/icons';
-@import 'config/typography';
-@import 'config/grid';
-@import 'config/themes';
+@import "config/colors";
+@import "config/icons";
+@import "config/typography";
+@import "config/grid";
+@import "config/themes";
 
-@import 'mixin/positioning';
-@import 'mixin/icon';
-@import 'mixin/gradient';
+@import "mixin/positioning";
+@import "mixin/icon";
+@import "mixin/gradient";
 
-@import 'layout/typography';
-@import 'layout/404';
+@import "layout/typography";
+@import "layout/404";
 
-@import 'master';
+@import "master";
 
 .is-child-theme {
-	@import 'layout/base';
-	@import 'layout/typography';
-	@import 'layout/header';
-	@import 'layout/mainmenu';
-	@import 'layout/footer';
-    @import 'layout/content';
 
-    @import 'typography/headings';
+  .grid--columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    @import 'component/box/box';
-    @import 'component/box/panel';
-    @import 'component/box/news';
-    @import 'component/box/index';
-    @import 'component/hero/hero';
-    @import 'component/hero/hero-sections';
-    @import 'component/box/social';
-    @import 'component/box/event';
-    @import 'component/table/datatable';
-    @import 'component/bubble';
-    @import 'component/gallery/image-gallery';
+  small, .small {
+    font-size: 1em !important;
+  }
 
-    @import 'component/footer/footer';
+  .grid > [class*="modularity-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    @import 'component/navigation/mobile';
-    @import 'component/navigation/pagination';
-    @import 'component/navigation/aside';
+  .grid[class*="sidebar-"] {
+    padding: 0;
+    margin: 0;
 
-    @import 'component/button/button';
+    .grid-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
-    @import 'utility/creamy';
-    @import 'utility/link-item';
-    @import 'utility/headings';
-    @import 'utility/forms';
-    @import 'utility/label';
-    @import 'utility/animate';
+  @import "layout/base";
+  @import "layout/typography";
+  @import "layout/header";
+  @import "layout/mainmenu";
+  @import "layout/footer";
+  @import "layout/content";
+  @import "layout/search";
 
-    @import 'modularity/inheritpost';
-    @import 'modularity/herosection';
+  @import "typography/headings";
+
+  @import "component/box/box";
+  @import "component/box/panel";
+  @import "component/box/news";
+  @import "component/box/index";
+  @import "component/box/filled";
+  @import "component/box/card";
+  @import "component/hero/hero";
+  @import "component/hero/hero-sections";
+  @import "component/box/event";
+  @import "component/table/datatable";
+  @import "component/bubble";
+  @import "component/gallery/image-gallery";
+  @import "component/share";
+  @import "component/cookie";
+  @import "component/form";
+  @import "component/accordion";
+
+  @import "component/navigation/breadcrumb";
+  @import "component/navigation/pagination";
+  @import "component/navigation/aside";
+  @import "component/navigation/mobile";
+  @import "component/navigation/accessability";
+
+  @import "component/button/button";
+
+  @import "utility/creamy";
+  @import "utility/link-item";
+  @import "utility/headings";
+  @import "utility/forms";
+  @import "utility/label";
+
+  @import "modularity/inheritpost"; 
+  @import "modularity/herosection";
 }

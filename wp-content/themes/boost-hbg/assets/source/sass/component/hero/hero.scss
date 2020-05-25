@@ -1,124 +1,142 @@
 .hero {
+  @media screen and #{$screen-below-md} {
+    padding-top: 124px;
+  }
 
-    &.has-stripe.has-stripe {
-        padding-left: 0;
+  &.has-stripe.has-stripe {
+    padding-left: 0;
+  }
+
+  button {
+    display: none !important;
+  }
+
+  .slider {
+    background-color: #fff;
+    max-height: 100vh;
+
+    .slider-image {
+      @media screen and #{$screen-md-up} {
+        background-position-y: 110px;
+      }
     }
 
-    button  {
+    .player a {
+      z-index: 10 !important;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+    }
+
+    [class*="slider-nav-"] {
+      background-color: $yellow; 
+      border-radius: 0;
+      text-indent: -500px;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      padding: 0;
+      z-index: 20;
+      border-radius: 50%;
+
+      @media screen and #{$screen-below-sm} {
+        border: none;
+        width: 20px;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        background: none;
+        text-shadow: 0 0 1px rgba(#000, 0.3);
+        background-color: transparent;
+      }
+
+      i {
         display: none !important;
-    }
+      }
 
-    .slider {
-        background-color: #fff;
-        max-height: 100vh;
-    }
+      &:after {
+        @include cover();
+        text-indent: 0;
+        line-height: 50px !important;
+        transition: margin 200ms;
+      }
 
-    .search {
-        @include center();
-        width: 30%;
-        min-width: 300px;
-        z-index: 20;
-
-        label {
-            display: inline-block;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-
-        input[type="search"] {
-            border: none;
-        }
+      &:hover {
+        background-color: $black;
+      }
     }
 
     .text-block.text-block-center {
-        @include center();
-        font-family: $boost-font-family;
-        text-align: center;
-        right: auto;
-        bottom: auto;
-        letter-spacing: .01em;
-        font-size: 1.7em;
-        color: #fff;
-        width: 90%;
-        z-index: 30;
-        background-color: transparent !important;
-        font-weight: 300;
+      @include center();
+      background-color: $yellow !important;
+      background-image: none;
+      border-radius: 50%;
+      color: $black;
+      font-family: $boost-font-family;
+      font-size: calc(0.2em + .5vw);
+      text-align: center;
+      letter-spacing: 0.01em;
+      left: 27vw;
+      top: calc(62% + 4vw);
+      bottom: auto;
+      height: 30vw;
+      min-height: 400px;
+      width: 30vw;
+      min-width: 400px;
+      line-height: 1.5;
+
+      span {
+        text-shadow: none;
+      }
+
+      em.title {
+        font-size: 2em;
+      }
+
+      // iPad
+      @media screen and #{$screen-below-lg} {
+        font-size: 0.7em;
+        top: 55%;
+        left: 50%;
+        height: 30vw;
+        width: 30vw;
+      }
+
+      // Mobile
+      @media screen and #{$screen-below-sm} {
+        font-size: 0.8em;
+        left: 50%;
+        right: 50%;
+        top: 50%;
+        width: 250px;
+        height: 250px;
+        max-width: 98%;
+        max-height: 98%;
+        position: relative;
 
         span {
-            text-shadow: none;
+          line-height: 1.5;
+          padding: 0 22px;
+          display:  block;
         }
+      }
+    }
+  }
 
-        @media screen and #{$screen-below-md} {
-            font-size: 1.3em;
-        }
+  .search {
+    @include center();
+    width: 30%;
+    min-width: 300px;
+    z-index: 20;
 
-        /* Mobile */
-        @media screen and #{$screen-below-sm} {
-            font-size: 1.1em;
-        }
+    label {
+      display: inline-block;
+      font-weight: 300;
+      letter-spacing: 1px;
     }
 
-    .stripe {
-        display: none !important;
+    input[type="search"] {
+      border: none;
     }
-}
-
-.slider {
-    .player a {
-        z-index: 10 !important;
-        text-shadow: 0 0 9px rgba(0,0,0,.3);
-    }
-
-    [class*=slider-nav-] {
-        transition: background 200ms;
-        // Color theme styles
-        @if ($includeThemes == true) {
-            @each $theme, $color in $themes {
-                .custom-color-#{$theme} & {
-                    background: rgba(map-get($color, default),.95);
-                }
-            }
-        }
-        border-radius: 0;
-        text-indent: -500px;
-        overflow: hidden;
-        width: 50px;
-        height: 50px;
-        padding: 0;
-        z-index: 20;
-        border-radius: 50%;
-
-        @media screen and #{$screen-below-sm} {
-            border: none;
-            width: 20px;
-            font-size: 1.5em;
-            line-height: 1.5em;
-            background: none;
-            text-shadow: 0 0 1px rgba(#000,.3);
-            background-color: transparent;
-        }
-
-        i {
-            display: none !important;
-        }
-
-        &:after {
-            @include cover();
-            text-indent: 0;
-            line-height: 50px !important;
-            transition: margin 200ms;
-        }
-
-        &:hover {
-            // Color theme styles
-            @if ($includeThemes == true) {
-                @each $theme, $color in $themes {
-                    .custom-color-#{$theme} & {
-                        background-color: rgba(map-get($color, default),.9);
-                    }
-                }
-            }
-        }
-
-    }
+  }
+  .stripe {
+    display: none !important;
+  }
 }

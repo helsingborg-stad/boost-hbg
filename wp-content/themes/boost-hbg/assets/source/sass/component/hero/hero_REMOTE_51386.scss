@@ -1,0 +1,133 @@
+.hero {
+  &.has-stripe.has-stripe {
+    padding-left: 0;
+  }
+
+  button {
+    display: none !important;
+  }
+
+  .slider {
+    background-color: #fff;
+    max-height: 100vh;
+
+    .slider-image {
+      @media screen and #{$screen-md-up} {
+        background-position-y: 110px;
+      }
+    }
+
+    .player a {
+      z-index: 10 !important;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+    }
+
+    [class*="slider-nav-"] {
+      background-color: $yellow; 
+      border-radius: 0;
+      text-indent: -500px;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+      padding: 0;
+      z-index: 20;
+      border-radius: 50%;
+
+      @media screen and #{$screen-below-sm} {
+        border: none;
+        width: 20px;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        background: none;
+        text-shadow: 0 0 1px rgba(#000, 0.3);
+        background-color: transparent;
+      }
+
+      i {
+        display: none !important;
+      }
+
+      &:after {
+        @include cover();
+        text-indent: 0;
+        line-height: 50px !important;
+        transition: margin 200ms;
+      }
+
+      &:hover {
+        background-color: $black;
+      }
+    }
+
+    .text-block.text-block-center {
+      @include center();
+      background-color: $yellow !important;
+      background-image: none;
+      border-radius: 50%;
+      color: $black;
+      font-family: $boost-font-family;
+      font-size: .75em;
+      text-align: center;
+      letter-spacing: 0.01em;
+      left: 27vw;
+      top: 60%;
+      bottom: auto;
+      height: 530px;
+      width: 530px;
+
+      span {
+        text-shadow: none;
+      }
+
+      em.title {
+        font-size: 2em;
+      }
+
+      // iPad
+      @media screen and #{$screen-below-lg} {
+        font-size: 0.8em;
+        top: 55%;
+        left: 50%;
+        height: 400px;
+        width: 400px;
+      }
+
+      // Mobile
+      @media screen and #{$screen-below-sm} {
+        font-size: 0.8em;
+        left: 50%;
+        right: 50%;
+        top: 65%;
+        width: 250px;
+        height: 250px;
+        position: relative;
+
+        span {
+          line-height: 1.5;
+          padding: 0 22px;
+          width: inherit;
+        }
+      }
+    }
+  }
+
+  .search {
+    @include center();
+    width: 30%;
+    min-width: 300px;
+    z-index: 20;
+
+    label {
+      display: inline-block;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    input[type="search"] {
+      border: none;
+    }
+  }
+  .stripe {
+    display: none !important;
+  }
+}
