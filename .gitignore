@@ -6,6 +6,7 @@
 
 # Plugins
 /wp-content/plugins/*
+wp-content/mu-plugins/attachmentDownloader.php
 
 # Themes
 /wp-content/themes/*
@@ -26,7 +27,7 @@
 /wp
 
 # Composer generated files
-composer.lock
+#composer.lock
 
 # Operating system files
 .DS_Store

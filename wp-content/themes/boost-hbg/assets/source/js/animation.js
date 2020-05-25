@@ -26,5 +26,5 @@ $(function(jQuery) {
     }
 
     //Init function
-    revealOnScroll();
+    // revealOnScroll();
 });
