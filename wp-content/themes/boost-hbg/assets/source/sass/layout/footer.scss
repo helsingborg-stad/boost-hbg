@@ -21,6 +21,11 @@ footer.main-footer {
     form {
       font-size: inherit;
       padding: 0;
+
+      input[type="search"]::placeholder,
+      input[type="text"]::placeholder {
+        color: $white;
+      }
     }
   }
 
