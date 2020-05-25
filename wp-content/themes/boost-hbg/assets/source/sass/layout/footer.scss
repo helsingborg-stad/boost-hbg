@@ -19,7 +19,7 @@ footer.main-footer {
     padding: 0;
   }
   
-  @media screen and (min-width: #{$screen-sm-min}) {
+  @media screen and (min-width: #{$screen-sm-max}) {
     .widget_text.grid-lg-4 {
       padding-left: 15px; 
       padding-right: 15px;
