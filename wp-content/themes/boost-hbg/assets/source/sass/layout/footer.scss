@@ -17,7 +17,9 @@ footer.main-footer {
   }
   
   .widget_text,
-  .widget_search {
+  .widget_search,
+  .WP_Editor_Widget {
+    color: $white;
     form {
       font-size: inherit;
       padding: 0;
