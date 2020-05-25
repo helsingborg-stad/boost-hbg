@@ -44,4 +44,10 @@
   .link-item:before {
     display: none; 
   }
+
+  .link-item {
+    padding: 7px 15px;
+    border: 4px solid $black;
+    display: inline-block;
+  }
 }
