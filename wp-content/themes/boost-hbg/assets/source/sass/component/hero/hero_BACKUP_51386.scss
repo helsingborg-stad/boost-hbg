@@ -74,7 +74,7 @@
       text-align: center;
       letter-spacing: 0.01em;
       left: 27vw;
-      top: calc(62% + 4vw);
+      top: 65%;
       bottom: auto;
       height: 30vw;
       min-height: 400px;
@@ -104,18 +104,22 @@
         font-size: 0.8em;
         left: 50%;
         right: 50%;
+<<<<<<< HEAD
         top: 50%;
+        width: 210px;
+        height: 210px;
+=======
+        top: 65%;
         width: 250px;
         height: 250px;
-        max-width: 98%;
-        max-height: 98%;
         position: relative;
 
         span {
           line-height: 1.5;
           padding: 0 22px;
-          display:  block;
+          width: inherit;
         }
+>>>>>>> a35370fef4aeaf483c469f4ef33e92491efb21c5
       }
     }
   }

@@ -1,8 +1,4 @@
 .hero {
-  @media screen and #{$screen-below-md} {
-    padding-top: 124px;
-  }
-
   &.has-stripe.has-stripe {
     padding-left: 0;
   }
@@ -70,17 +66,14 @@
       border-radius: 50%;
       color: $black;
       font-family: $boost-font-family;
-      font-size: calc(0.2em + .5vw);
+      font-size: .75em;
       text-align: center;
       letter-spacing: 0.01em;
       left: 27vw;
-      top: calc(62% + 4vw);
+      top: 60%;
       bottom: auto;
-      height: 30vw;
-      min-height: 400px;
-      width: 30vw;
-      min-width: 400px;
-      line-height: 1.5;
+      height: 530px;
+      width: 530px;
 
       span {
         text-shadow: none;
@@ -92,11 +85,11 @@
 
       // iPad
       @media screen and #{$screen-below-lg} {
-        font-size: 0.7em;
+        font-size: 0.8em;
         top: 55%;
         left: 50%;
-        height: 30vw;
-        width: 30vw;
+        height: 400px;
+        width: 400px;
       }
 
       // Mobile
@@ -104,18 +97,9 @@
         font-size: 0.8em;
         left: 50%;
         right: 50%;
-        top: 50%;
-        width: 250px;
-        height: 250px;
-        max-width: 98%;
-        max-height: 98%;
-        position: relative;
-
-        span {
-          line-height: 1.5;
-          padding: 0 22px;
-          display:  block;
-        }
+        top: 65%;
+        width: 210px;
+        height: 210px;
       }
     }
   }
