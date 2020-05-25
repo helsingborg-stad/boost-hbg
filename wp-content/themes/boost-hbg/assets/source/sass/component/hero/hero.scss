@@ -1,4 +1,8 @@
 .hero {
+  @media screen and #{$screen-below-md} {
+    padding-top: 124px;
+  }
+
   &.has-stripe.has-stripe {
     padding-left: 0;
   }
@@ -66,14 +70,17 @@
       border-radius: 50%;
       color: $black;
       font-family: $boost-font-family;
-      font-size: .75em;
+      font-size: calc(0.2em + .5vw);
       text-align: center;
       letter-spacing: 0.01em;
       left: 27vw;
-      top: 60%;
+      top: 65%;
       bottom: auto;
-      height: 530px;
-      width: 530px;
+      height: 30vw;
+      min-height: 400px;
+      width: 30vw;
+      min-width: 400px;
+      line-height: 1.5;
 
       span {
         text-shadow: none;
@@ -85,11 +92,11 @@
 
       // iPad
       @media screen and #{$screen-below-lg} {
-        font-size: 0.8em;
+        font-size: 0.7em;
         top: 55%;
         left: 50%;
-        height: 400px;
-        width: 400px;
+        height: 30vw;
+        width: 30vw;
       }
 
       // Mobile
@@ -97,7 +104,7 @@
         font-size: 0.8em;
         left: 50%;
         right: 50%;
-        top: 65%;
+        top: 50%;
         width: 210px;
         height: 210px;
       }
