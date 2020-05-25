@@ -28,6 +28,14 @@ require_once 'config/update.php';
 require_once 'config/upload.php';
 
 /**
+ * Captcha configuration
+ */
+if (file_exists(__DIR__ . '/config/captcha.php')) {
+    require_once 'config/captcha.php';
+}
+
+
+/**
  * AD configuration
  */
 if (file_exists(__DIR__ . '/config/ad.php')) {
