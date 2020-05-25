@@ -98,8 +98,15 @@
         left: 50%;
         right: 50%;
         top: 65%;
-        width: 210px;
-        height: 210px;
+        width: 250px;
+        height: 250px;
+        position: relative;
+
+        span {
+          line-height: 1.5;
+          padding: 0 22px;
+          width: inherit;
+        }
       }
     }
   }
