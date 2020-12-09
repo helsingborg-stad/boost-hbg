@@ -1,6 +1,13 @@
 #Redirect to admin
 RedirectMatch 301 /admin/(.*) /wp/wp-admin/$1
 
+# Force SSL
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</ifModule>
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
     RewriteEngine On

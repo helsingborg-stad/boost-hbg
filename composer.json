@@ -43,7 +43,9 @@
     "wpackagist-plugin/mce-table-buttons": "^3.0.0",
     "wpackagist-plugin/classic-editor": "^0.4.0",
     "helsingborg-stad/api-event-manager-integration": "^0.12.0",
-    "vlucas/phpdotenv": "^4.1"
+    "vlucas/phpdotenv": "^4.1",
+    "wpackagist-plugin/redirection": "^4.9",
+    "helsingborg-stad/modularity-form-builder": "^1.9"
   },
   "extra": {
     "wordpress-install-dir": "wp",
