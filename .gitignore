@@ -31,3 +31,4 @@ wp-content/mu-plugins/attachmentDownloader.php
 
 # Operating system files
 .DS_Store
+.dccache

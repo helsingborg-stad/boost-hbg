@@ -45,7 +45,8 @@
     "helsingborg-stad/api-event-manager-integration": "^0.12.0",
     "vlucas/phpdotenv": "^4.1",
     "wpackagist-plugin/redirection": "^4.9",
-    "helsingborg-stad/modularity-form-builder": "^1.9"
+    "helsingborg-stad/modularity-form-builder": "^1.9",
+    "wpackagist-plugin/nginx-helper": "^2.2"
   },
   "extra": {
     "wordpress-install-dir": "wp",
